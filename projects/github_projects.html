@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name=generator content="Hugo 0.92.0"><meta charset=utf-8>
+    <meta name=viewport content="width=device-width,initial-scale=1">
+    <base href="../">
+    <meta http-equiv=x-ua-compatible content="ie=edge">
+    <meta http-equiv=accept-ch content="DPR, Viewport-Width, Width">
+    <link rel=icon href=/fav.png type=image/gif>
+    <link rel=preconnect href=https://fonts.googleapis.com>
+    <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+    <link rel=preload as=style href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
+    <link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" media=print onload="this.media='all'">
+    <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel=stylesheet>
+    </noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel=stylesheet href=/css/font.css media=all>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DWJJVE27WD"></script>
+    <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-DWJJVE27WD',{anonymize_ip:!1})}</script>
+    <meta property="og:title" content="Thivin Anandh">
+    <meta property="og:description" content="Text about my cool site">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hugo-profile.netlify.app/"><meta property="og:site_name" content="Thivin Anandh">
+    <meta name=twitter:card content="summary">
+    <meta name=twitter:title content="Thivin Anandh">
+    <meta name=twitter:description content="Text about my cool site">
+    <link rel=stylesheet href=/bootstrap-5/css/bootstrap.min.css media=all><link rel=stylesheet href=/css/header.css media=all>
+    <link rel=stylesheet href=/css/footer.css media=all>
+    <link rel=stylesheet href=/css/theme.css media=all>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>:root{--text-color:#343a40;--text-secondary-color:#6c757d;--text-link-color:#007bff;--background-color:#eaedf0;--secondary-background-color:#64ffda1a;--primary-color:#007bff;--secondary-color:#f8f9fa;--text-color-dark:#e4e6eb;--text-secondary-color-dark:#b0b3b8;--text-link-color-dark:#5465ce;--background-color-dark:#080a0c;--secondary-background-color-dark:#161418;--primary-color-dark:#5465ce;--secondary-color-dark:#161418}body{font-size:1rem;font-weight:400;line-height:1.5;text-align:left}html{background-color:var(--background-color)!important}body::-webkit-scrollbar{height:0;width:8px;background-color:var(--background-color)}::-webkit-scrollbar-track{border-radius:1rem}::-webkit-scrollbar-thumb{border-radius:1rem;background:#b0b0b0;outline:1px solid var(--background-color)}#search-content::-webkit-scrollbar{width:.5em;height:.1em;background-color:var(--background-color)}</style>
+    <meta name=description content="Text about my cool site">
+    <link rel=stylesheet href=/css/index.css media=all>
+    <link rel=stylesheet href=/css/projects.css media=all>
+    <script defer src=/fontawesome-6/all-6.4.2.js></script>
+    <title>
+    Thivin Anandh
+    </title>
+    <style>
+        :root {
+    --content-width: 80%;
+}
+
+.container-fluid {
+    padding: 0;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+}
+
+.content-wrapper {
+    display: flex;
+    width: var(--content-width);
+    max-width: 1200px;
+    background-color: var(--background-color);
+}
+
+.sidebar {
+    font-family: 'Poppins', sans-serif;
+    width: 25%;
+    position: sticky;
+    top: 20px;
+    height: calc(100vh - 40px);
+    overflow-y: auto;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+}
+
+.content {
+    width: 75%;
+    padding: 20px;
+}
+
+.nav-link {
+    display: block;
+    padding: 10px;
+    color: var(--text-color);
+    text-decoration: none;
+    border-left: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover, .nav-link:focus {
+    background-color: var(--secondary-background-color);
+    border-left-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.section-card {
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.section-card h2 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif; 
+}
+
+.section-card h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin-top: 1.9rem;
+    /* Add a box around the text */
+    /* border: 2px solid var(--primary-color);
+    padding: 10px;
+    border-radius: 5px; */
+}
+
+.section-card h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+    margin-top: 1.2rem;
+}
+
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.project-card {
+    background-color: var(--background-color);
+    border-radius: 4px;
+    padding: 15px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    width: calc(50% - 14px);
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    /* transform: translateY(-5px); */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border: 2px solid var(--primary-color);
+}
+
+.project-card h5 {
+    color: var(--text-color);
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.project-card p {
+    color: var(--text-secondary-color);
+    font-family: 'Alata', sans-serif;
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+.github-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #24292e;
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.github-btn:hover {
+    background-color: var(--primary-color); 
+    color: var(--text-color)
+}
+
+.github-btn i {
+    margin-right: 5px;
+    /* increase size of icon */
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/* overide bootstrap */
+.btn {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 0.8rem !important;
+    color: var(--text-color) !important;
+    background-color: var(--primary-color) !important;
+    border: 2px solid var(--primary-color) !important;
+    margin-top: 0.2rem !important;
+    margin-bottom: 0.2rem !important;
+}
+
+@media (max-width: 1024px) {
+    .content-wrapper {
+        width: 90%;
+    }
+    .project-card {
+        width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+        width: 95%;
+    }
+    .sidebar, .content {
+        width: 100%;
+    }
+    .sidebar {
+        position: static;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .project-card {
+        width: 100%;
+    }
+}
+    </style>
+    </style>
+</head><body class="light">
+    <script>let localStorageValue=localStorage.getItem("pref-theme"),mediaQuery=window.matchMedia('(prefers-color-scheme: dark)').matches;switch(localStorageValue){case"dark":document.body.classList.add('dark');break;case"light":document.body.classList.remove('dark');break;default:mediaQuery&&document.body.classList.add('dark');break}</script>
+    <script>var prevScrollPos=window.pageYOffset;window.addEventListener("scroll",function(){let c=document.getElementById("profileHeader"),a=window.pageYOffset,b=!1,d=!0,e=d?prevScrollPos>a:a>0;e?c.classList.add("showHeaderOnTop"):b=!0,a===0&&(b=!0),b&&c.classList.remove("showHeaderOnTop"),prevScrollPos=a})</script>
+    <header id=profileHeader>
+        <nav class="pt-3 navbar navbar-expand-lg animate">
+           <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
+              <a class="navbar-brand primary-font text-wrap" href="/">
+              <img src=src/logo.png width=30 height=30 class="d-inline-block align-top">
+              Thivin Anandh
+              </a>
+              <div>
+                 <input id=search autocomplete=off class="form-control mr-sm-2 d-none d-md-block" placeholder="Ctrl + k to Search..." aria-label=Search oninput=searchOnChange(event)>
+              </div>
+              <button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#navbarContent aria-controls=navbarContent aria-expanded=false aria-label="Toggle navigation">
+                 <svg aria-hidden="true" height="24" viewBox="0 0 16 16" width="24" data-view-component="true">
+                    <path fill-rule="evenodd" d="M1 2.75A.75.75.0 011.75 2h12.5a.75.75.0 110 1.5H1.75A.75.75.0 011 2.75zm0 5A.75.75.0 011.75 7h12.5a.75.75.0 110 1.5H1.75A.75.75.0 011 7.75zM1.75 12a.75.75.0 100 1.5h12.5a.75.75.0 100-1.5H1.75z"/>
+                 </svg>
+              </button>
+              <div class="collapse navbar-collapse text-wrap primary-font" id=navbarContent>
+                 <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item navbar-text d-block d-md-none">
+                       <div class=nav-link>
+                          <input id=search autocomplete=off class="form-control mr-sm-2" placeholder="Ctrl + k to Search..." aria-label=Search oninput=searchOnChange(event)>
+                       </div>
+                    </li>
+                    <li class="nav-item navbar-text">
+                       <a class=nav-link href=/#about aria-label=about>
+                       About Me
+                       </a>
+                    </li>
+                    <li class="nav-item navbar-text">
+                       <a class=nav-link href=/#experience aria-label=experience>
+                       Experience
+                       </a>
+                    </li>
+                    <li class="nav-item navbar-text">
+                       <a class=nav-link href=/#education aria-label=education>
+                       Education
+                       </a>
+                    </li>
+                    <li class="nav-item navbar-text">
+                       <a class=nav-link href=/#projects aria-label=projects>
+                       Projects
+                       </a>
+                    </li>
+                    <li class="nav-item navbar-text">
+                       <a class=nav-link href=/#achievements aria-label=achievements>
+                       Achievements
+                       </a>
+                    </li>
+                    <li class="nav-item navbar-text">
+                       <a class=nav-link href=/#contact aria-label=contact>
+                       Contact
+                       </a>
+                    </li>
+                    <li class="nav-item navbar-text">
+                       <a class=nav-link href=/blogs title="Blog posts">
+                       Blog
+                       </a>
+                    </li>
+                    <li class="nav-item navbar-text">
+                       <a class=nav-link href=/gallery title="Blog posts">
+                       Gallery
+                       </a>
+                    </li>
+                    <li class="nav-item navbar-text">
+                       <div class=text-center>
+                          <button id=theme-toggle>
+                             <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+                             </svg>
+                             <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="5"/>
+                                <line x1="12" y1="1" x2="12" y2="3"/>
+                                <line x1="12" y1="21" x2="12" y2="23"/>
+                                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                                <line x1="1" y1="12" x2="3" y2="12"/>
+                                <line x1="21" y1="12" x2="23" y2="12"/>
+                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                             </svg>
+                          </button>
+                       </div>
+                    </li>
+                 </ul>
+              </div>
+           </div>
+        </nav>
+     </header>
+
+    <div class="container-fluid">
+        <div class="content-wrapper">
+            <nav class="sidebar">
+                <a href="#hpc-computation" class="nav-link">HPC & Computation</a>
+                <a href="#FEM" class="nav-link">FEM</a>
+                <a href="#CFD" class="nav-link">CFD</a>
+                <a href="#machine-learning-mlops" class="nav-link">Machine Learning and MLOps</a>
+                <a href="#ga-nd-ne" class="nav-link">Genetic Algorithm and NeuroEvolution</a>
+                <a href="#open-source-tools" class="nav-link">Open Source Tools</a>
+                <a href="#teaching-repositories" class="nav-link">Teaching Repositories</a>
+                <a href="#game-dev" class="nav-link">Game Development</a>
+                
+
+                <a href="#others" class="nav-link">Others</a>
+                
+            </nav>
+            
+            <main class="content">
+                
+            
+                <section id="hpc-computation" class="section-card">
+                    <h2>HPC & Computation</h2>
+                    <!-- <h3>High Performance Computing</h3> -->
+                    <h4>Message Passing Interface (MPI)</h4>
+                    <div class="project-cards">
+                        <div class="project-card">
+                            <h5>Page Rank Computation using MPI</h5>
+                            <p>Page Rank computation using MPI on a distributed system</p>
+                            <a href="https://github.com/thivinanandh/MPI_Programming/tree/main/PageRank" class="github-btn" target="_blank">
+                                <i class="fab fa-github" style="margin-right: 5px"></i> GitHub
+                            </a>
+                        </div>
+                        <div class="project-card">
+                            <h5>Collective Communications Implementation</h5>
+                            <p>Implementation of MPI Collective communications as shown in Thakur. Et al. 2005</p>
+                            <a href="https://github.com/thivinanandh/MPI_Programming/tree/main/MPI_Collective_Communication" class="github-btn" target="_blank">
+                                <i class="fab fa-github" style="margin-right: 5px"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                    <h4>GPU Programming (CUDA)</h4>
+                    <div class="project-cards">
+                        <div class="project-card">
+                            <h5>GPU based Asynchronous contact tracing</h5>
+                            <p>GPU based Asynchronous contact tracing for infectious diseases</p>
+                            <a href="https://github.com/thivinanandh/GPU-Cuda_Contact_Tracing" class="github-btn" target="_blank">
+                                <i class="fab fa-github" style="margin-right: 5px"></i> GitHub
+                            </a>
+                        </div>
+                        <div class="project-card">
+                            <h5>GPU Matrix Multiplication</h5>
+                            <p>Implementation of Matrix Multiplication routines between Shared and nonShared GPU memory</p>
+                            <a href="https://github.com/thivinanandh/GPU-OpenMP-MatixMultiplicaiton" class="github-btn" target="_blank">
+                                <i class="fab fa-github" style="margin-right: 5px"></i> GitHub
+                            </a>
+                        </div>
+                        <div class="project-card">
+                            <h5>GPU-Cuda Codes</h5>
+                            <p>A collection of some of my CUDA based codes for NVIDIA GPU's</p>
+                            <a href="https://github.com/thivinanandh/GPU_Programming_CUDA" class="github-btn" target="_blank">
+                                <i class="fab fa-github" style="margin-right: 5px"></i> GitHub
+                            </a>
+                        </div>
+                        <div class="project-card">
+                            <h5>Parallel Iterative Solvers for Sparse Matrices</h5>
+                            <p>Iterative solvers for CSR matrix written using IntelMKL and openmp parallel routines</p>
+                            <a href="https://github.com/thivinanandh/IterativeSolversforFEM" class="github-btn" target="_blank">
+                                <i class="fab fa-github" style="margin-right: 5px"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="FEM" class="section-card">
+                    <h2>Finite Element Methods</h2>
+                    <!-- <h4>Message Passing Interface (MPI)</h4> -->
+
+                    <div class="project-cards">
+                        <div class="project-card">
+                            <h5>Parallel Finite Element Solver for 1D problems</h5>
+                            <p>End to End 1D FEM solver with CSR Support and Visualisations</p>
+                            <a href="https://github.com/thivinanandh/1D_FEM_Solver_Parallel" class="github-btn" target="_blank">
+                                <i class="fab fa-github" style="margin-right: 5px"></i> GitHub
+                            </a>
+                        </div>
+                        <div class="project-card">
+                            <h5>ParMooN</h5>
+                            <p>I have made contribution to the inhouse FEM Package developed at Stars Lab IISc</p>
+                            <a href="https://github.com/sassanin/ParMooN" class="github-btn" target="_blank">
+                                <i class="fab fa-github" style="margin-right: 5px"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="CFD" class="section-card">
+                    <h2>Computational Fluid Dynamics</h2>
+                    <div class="project-cards">
+                        <div class="project-card">
+                            <h5>2D Incompressible navier Stokes Solver</h5>
+                            <p>For Lid Driven Cavity problem using Pressure projection method</p>
+                            <a href="https://github.com/thivinanandh/2D_Incompressible_NavierStokes_Solver" class="github-btn" target="_blank">
+                                <i class="fab fa-github" style="margin-right: 5px"></i> GitHub
+                            </a>
+                        </div>
+                        <div class="project-card">
+                            <h5>CFD Codes</h5>
+                            <p>Collection of 1D and 2D Codes for Elliptic and Hyperbolic problems in CFD</p>
+                            <a href="https://github.com/thivinanandh/CFD_Course_Codes" class="github-btn" target="_blank">
+                                <i class="fab fa-github" style="margin-right: 5px"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            
+                <section id="machine-learning-mlops" class="section-card">
+                    <h2>Machine Learning and MLOps</h2>
+                    <h3>MLOps</h3>
+                    <div class="project-cards">
+                        <div class="project-card">
+                            <h5>CI/CD based Web deployment of ML Classifier</h5>
+                            <p>Includes github actions, DVC, Flask web deployment(Heroku), Cookie Cutter template</p>
+                            <a href="https://github.com/thivinanandh/ML_MINST_Deployment" class="github-btn" target="_blank">
+                                <i class="fab fa-github" style="margin-right: 5px"></i> GitHub
+                            </a>
+                        </div>
+                        <div class="project-card">
+                            <h5>MlOps-Teaching Repo</h5>
+                            <p>TA material for pytest, dvc, github actions</p>
+                            <a href="https://github.com/thivinanandh/MLOps_GithubActions" class="github-btn" target="_blank">
+                                <i class="fab fa-github" style="margin-right: 5px"></i> GitHub
+                            </a>
+                        </div>
+                        <div class="project-card">
+                            <h5>Distributed ML Training on AWS</h5>
+                            <p>Distributed ML training on AWS using Spark and Docker</p>
+                            <a href="https://github.com/thivinanandh/Distributed_ML_AWS" class="github-btn" target="_blank">
+                                <i class="fab fa-github" style="margin-right: 5px"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                    <h3>Machine Learning</h3>
+                    <div class="project-cards">
+                        <div class="project-card">
+                            <h5>Human Voice Classification</h5>
+                            <p>Voice classification using MFCC Values</p>
+                            <a href="https://github.com/thivinanandh/ML_Human_Voice_Classification" class="github-btn" target="_blank">
+                                <i class="fab fa-github" style="margin-right: 5px"></i> GitHub
+                            </a>
+                        </div>
+                        <div class="project-card">
+                            <h5>Naive Bayes Classifier</h5>
+                            <p>For classification of news genre based on headlines</p>
+                            <a href="https://github.com/thivinanandh/Naive_Bayes_Classifier" class="github-btn" target="_blank">
+                                <i class="fab fa-github" style="margin-right: 5px"></i> GitHub
+                            </a>
+                        </div>
+                        <div class="project-card">
+                            <h5>Covid prediction based on Symptoms</h5>
+                            <p>A very basic ML model for identifying covid result based on Symptoms</p>
+                            <a href="https://github.com/thivinanandh/Covid_Prediction_ML" class="github-btn" target="_blank">
+                                <i class="fab fa-github" style="margin-right: 5px"></i> GitHub
+                            </a>
+                        </div>
+                        <div class="project-card">
+                            <h5>Captcha Image Prediction</h5>
+                            <p>Captcha Image prediction using the Image recognition techniques</p>
+                            <a href="https://github.com/thivinanandh/Captcha-Image-Detection-using-Image-Recognition" class="github-btn" target="_blank">
+                                <i class="fab fa-github" style="margin-right: 5px"></i> GitHub
+                            </a>
+                        </div>
+                        <div class="project-card">
+                            <h5>Mini ML Projects</h5>
+                            <p>Collection of Small ML projects</p>
+                            <a href="https://github.com/thivinanandh/Mini_ML_Projects_Collection" class="github-btn" target="_blank">
+                                <i class="fab fa-github" style="margin-right: 5px"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                    <h3>NLP - learning codes</h3>
+                    <div class="project-cards">
+                        <div class="project-card">
+                            <h5>Sentiment Analysis</h5>
+                            <p>Sentiment analysis on news dataset</p>
+                            <a href="https://github.com/thivinanandh/NLP-Learning/tree/master/Cybersecurity%20-Token%20Classification" class="github-btn" target="_blank">
+                                <i class="fab fa-github" style="margin-right: 5px"></i> GitHub
+                            </a>
+                        </div>
+                        <div class="project-card">
+                            <h5>Token Classification</h5>
+                            <p>Token classification on cyber security dataset</p>
+                            <a href="https://github.com/thivinanandh/NLP-Learning/tree/master/Cybersecurity%20-Token%20Classification" class="github-btn" target="_blank">
+                                <i class="fab fa-github" style="margin-right: 5px"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                    <h3>Reinforcement Learning</h3>
+                    <div class="project-cards">
+                        <div class="project-card">
+                            <h5>RL for Lawn mover problem</h5>
+                            <p>Reinforcement learning for solving a Lawn mover Problem</p>
+                            <a href="https://github.com/thivinanandh/Reinforment_Learning_Lawn_Mover" class="github-btn" target="_blank">
+                                <i class="fab fa-github" style="margin-right: 5px"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                    <h3>Genetic Algorithm</h3>
+                    <div class="project-cards">
+                        <div class="project-card">
+                            <h5>nQueens Problem</h5>
+                            <p>A Genetic Algorithm based nQueens Solver</p>
+                            <a href="https://github.com/thivinanandh/Genetic_Algorithm/tree/main/nQueens" class="github-btn" target="_blank">
+                                <i class="fab fa-github" style="margin-right: 5px"></i> GitHub
+                            </a>
+                            <a href="https://thivinanandh.github.io/Genetic_Algorithm/nQueens/" class="btn btn-primary">Live Demo</a>
+                        </div>
+                        <div class="project-card">
+                            <h5>Shakesperean Monkey</h5>
+                            <p>A demo problem for understanding Genetic Algorithm</p>
+                            <a href="https://github.com/thivinanandh/Genetic_Algorithm/tree/main/Shakespearean_Monkey" class="github-btn" target="_blank">
+                                <i class="fab fa-github" style="margin-right: 5px"></i> GitHub
+                            </a>
+                            <a href="https://thivinanandh.github.io/Genetic_Algorithm/Shakespearean_Monkey/" class="btn btn-primary">Live Demo</a>
+                        </div>
+                    </div>
+                    <h3>NeuroEvolution</h3>
+                    <div class="project-cards">
+                        <div class="project-card">
+                            <h5>FlappyBird</h5>
+                            <p>A neuro Evolution trainning and implementation of Flappy bird</p>
+                            <a href="https://github.com/thivinanandh/NeuroEvolution" class="github-btn" target="_blank">
+                                <i class="fab fa-github" style="margin-right: 5px"></i> GitHub
+                            </a>
+                            <a href="https://thivinanandh.github.io/NeuroEvolution/flappyBird/index.html" class="btn btn-primary">NE Training Demo</a>
+                            <a href="https://thivinanandh.github.io/NeuroEvolution/flappyNN/index.html" class="btn btn-primary">Neural Network Input Visualisation</a>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="ga-nd-ne" class="section-card">
+                    <h2>Genetic Algorithm and NeuroEvolution</h2>
+                    <h3>Genetic Algorithm</h3>
+                    <div class="project-cards">
+                        <div class="project-card">
+                            <h5>nQueens Problem</h5>
+                            <p>A Genetic Algorithm based nQueens Solver</p>
+                            <a href="https://github.com/thivinanandh/Genetic_Algorithm/tree/main/nQueens" class="github-btn" target="_blank">
+                                <i class="fab fa-github" style="margin-right: 5px"></i> GitHub
+                            </a>
+                            <a href="https://thivinanandh.github.io/Genetic_Algorithm/nQueens/" class="btn btn-primary">Live Demo</a>
+                        </div>
+                        <div class="project-card">
+                            <h5>Shakesperean Monkey</h5>
+                            <p>A demo problem for understanding Genetic Algorithm</p>
+                            <a href="https://github.com/thivinanandh/Genetic_Algorithm/tree/main/Shakespearean_Monkey" class="github-btn" target="_blank">
+                                <i class="fab fa-github" style="margin-right: 5px"></i> GitHub
+                            </a>
+                            <a href="https://thivinanandh.github.io/Genetic_Algorithm/Shakespearean_Monkey/" class="btn btn-primary">Live Demo</a>
+                        </div>
+                    </div>
+                    <h3>NeuroEvolution</h3>
+                    <div class="project-cards">
+                        <div class="project-card">
+                            <h5>FlappyBird</h5>
+                            <p>A neuro Evolution trainning and implementation of Flappy bird</p>
+                            <a href="https://github.com/thivinanandh/NeuroEvolution" class="github-btn" target="_blank">
+                                <i class="fab fa-github" style="margin-right: 5px"></i> GitHub
+                            </a>
+                            <a href="https://thivinanandh.github.io/NeuroEvolution/flappyBird/index.html" class="btn btn-primary">NE Training Demo</a>
+                            <a href="https://thivinanandh.github.io/NeuroEvolution/flappyNN/index.html" class="btn btn-primary">Neural Network Input Visualisation</a>
+                        </div>
+                    </div>
+                </section>
+            
+                <section id="open-source-tools" class="section-card">
+                    <h2>Open Source Tools</h2>
+                    <div class="project-cards">
+                        <div class="project-card">
+                            <h5>pdf to h5p Converter</h5>
+                            <p>An online tool which converts pdf into the h5p format</p>
+                            <a href="https://github.com/thivinanandh/pdf_to_h5p_converter" class="github-btn" target="_blank">
+                                <i class="fab fa-github" style="margin-right: 5px"></i> GitHub
+                            </a>
+                        </div>
+                        <div class="project-card">
+                            <h5>FootBall Links Stream</h5>
+                            <p>An online webpage which grabs all live soccer links</p>
+                            <a href="https://thivinanandh.github.io/Football_Streaming_Links/" class="github-btn" target="_blank">
+                                <i class="fab fa-github" style="margin-right: 5px"></i> GitHub
+                            </a>
+                        </div>
+                        <div class="project-card">
+                            <h5>Grading Emailer</h5>
+                            <p>A css Flex based automated email report generation tool</p>
+                            <a href="https://github.com/thivinanandh/grading-emailer" class="github-btn" target="_blank">
+                                <i class="fab fa-github" style="margin-right: 5px"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            
+                <section id="teaching-repositories" class="section-card">
+                    <h2>Teaching Repositories</h2>
+                    <div class="project-cards">
+                        <div class="project-card">
+                            <h5>Python Libraries</h5>
+                            <p>Collection of Teaching notebooks for Python libraries</p>
+                            <a href="https://github.com/thivinanandh/Teaching-Python.git" class="github-btn" target="_blank">
+                                <i class="fab fa-github" style="margin-right: 5px"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="game-dev" class="section-card">
+                    <h2>Game Development</h2>
+                    <div class="project-cards">
+                        <div class="project-card">
+                            <h5>2048</h5>
+                            <p>2048 game built using p5js</p>
+                            <a href="https://thivinanandh.github.io/games/js/2048/2048.html" class="btn btn-primary">Play Game</a>
+                        </div>
+                        <div class="project-card">
+                            <h5>Slider puzzle</h5>
+                            <p>Slider puzzle built using p5js</p>
+                            <a href="https://thivinanandh.github.io/games/js/slider/index.html" class="btn btn-primary">Play Game</a>
+                        </div>
+                    </div>
+                </section>
+            
+                <section id="others" class="section-card">
+                    <h2>Others</h2>
+                    <h3>Game Development</h3>
+                    <div class="project-cards">
+                        <div class="project-card">
+                            <h5>2048</h5>
+                            <p>2048 game built using p5js</p>
+                            <a href="https://thivinanandh.github.io/games/js/2048/2048.html" class="btn btn-primary">Play Game</a>
+                        </div>
+                        <div class="project-card">
+                            <h5>Slider puzzle</h5>
+                            <p>Slider puzzle built using p5js</p>
+                            <a href="https://thivinanandh.github.io/games/js/slider/index.html" class="btn btn-primary">Play Game</a>
+                        </div>
+                    </div>
+                    <h3>Web Development</h3>
+                    <div class="project-cards">
+                        <div class="project-card">
+                            <h5>CAF</h5>
+                            <p>A landing page for a Application (Design Credits : ar.venkatesh.ry@gmail.com)</p>
+                            <a href="https://thivinthewebdev.github.io/CAF_acc/CAF_acc/docs/index.html" class="btn btn-primary">View Page</a>
+                        </div>
+                    </div>
+                    <h3>Operating Systems</h3>
+                    <div class="project-cards">
+                        <div class="project-card">
+                            <h5>ReaderWritter</h5>
+                            <p>Reader-Writter Codes in C</p>
+                            <a href="https://github.com/thivinanandh/Operating_Systems_Codes/tree/master/Reader-Writter" class="github-btn" target="_blank">
+                                <i class="fab fa-github" style="margin-right: 5px"></i> GitHub
+                            </a>
+                        </div>
+                        <div class="project-card">
+                            <h5>job Scheduler</h5>
+                            <p>A simple job scheduler in C</p>
+                            <a href="https://github.com/thivinanandh/Operating_Systems_Codes/tree/master/jobScheduler" class="github-btn" target="_blank">
+                                <i class="fab fa-github" style="margin-right: 5px"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                    <h3>Remote Procedure Call (RPC)</h3>
+                    <div class="project-cards">
+                        <div class="project-card">
+                            <h5>File Transfer Client using RPC</h5>
+                            <p>A simple file transfer client using RPC</p>
+                            <a href="https://github.com/thivinanandh/File-Transfer-client-using-RPC" class="github-btn" target="_blank">
+                                <i class="fab fa-github" style="margin-right: 5px"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    <script src=/bootstrap-5/js/bootstrap.bundle.min.js></script>
+    <script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
+    <script>var tooltipTriggerList,tooltipList;document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove('dark'),localStorage.setItem("pref-theme",'light')):(document.body.classList.add('dark'),localStorage.setItem("pref-theme",'dark'))}),tooltipTriggerList=[].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]')),tooltipList=tooltipTriggerList.map(function(a){return new bootstrap.Tooltip(a)})</script>
+    <script src=/js/search.js></script>
+    <section id=search-content class=py-2>
+       <div class=container id=search-results></div>
+    </section>
+</body>
+
+</html>

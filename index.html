@@ -28,7 +28,7 @@
     <link rel=stylesheet href=/css/footer.css media=all>
     <link rel=stylesheet href=/css/theme.css media=all>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <style>:root{--text-color:#343a40;--text-secondary-color:#6c757d;--text-link-color:#007bff;--background-color:#eaedf0;--secondary-background-color:#64ffda1a;--primary-color:#007bff;--secondary-color:#f8f9fa;--text-color-dark:#e4e6eb;--text-secondary-color-dark:#b0b3b8;--text-link-color-dark:#8d6fca;--background-color-dark:#080a0c;--secondary-background-color-dark:#161418;--primary-color-dark:#5465ce;--secondary-color-dark:#161418}body{font-size:1rem;font-weight:400;line-height:1.5;text-align:left}html{background-color:var(--background-color)!important}body::-webkit-scrollbar{height:0;width:8px;background-color:var(--background-color)}::-webkit-scrollbar-track{border-radius:1rem}::-webkit-scrollbar-thumb{border-radius:1rem;background:#b0b0b0;outline:1px solid var(--background-color)}#search-content::-webkit-scrollbar{width:.5em;height:.1em;background-color:var(--background-color)}</style>
+    <style>:root{--text-color:#343a40;--text-secondary-color:#6c757d;--text-link-color:#007bff;--background-color:#eaedf0;--secondary-background-color:#64ffda1a;--primary-color:#007bff;--secondary-color:#f8f9fa;--text-color-dark:#e4e6eb;--text-secondary-color-dark:#b0b3b8;--text-link-color-dark:#5465ce;--background-color-dark:#080a0c;--secondary-background-color-dark:#161418;--primary-color-dark:#5465ce;--secondary-color-dark:#161418}body{font-size:1rem;font-weight:400;line-height:1.5;text-align:left}html{background-color:var(--background-color)!important}body::-webkit-scrollbar{height:0;width:8px;background-color:var(--background-color)}::-webkit-scrollbar-track{border-radius:1rem}::-webkit-scrollbar-thumb{border-radius:1rem;background:#b0b0b0;outline:1px solid var(--background-color)}#search-content::-webkit-scrollbar{width:.5em;height:.1em;background-color:var(--background-color)}</style>
     <meta name=description content="Text about my cool site">
     <link rel=stylesheet href=/css/index.css media=all>
     <link rel=stylesheet href=/css/projects.css media=all>
@@ -43,7 +43,7 @@
     <header id=profileHeader>
        <nav class="pt-3 navbar navbar-expand-lg animate">
           <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
-             <a class="navbar-brand primary-font text-wrap">
+             <a class="navbar-brand primary-font text-wrap" href="/">
              <img src=src/logo.png width=30 height=30 class="d-inline-block align-top">
              Thivin Anandh
              </a>
@@ -344,19 +344,35 @@
        <!-- ABOUT ME -->
        <section id="about" class="py-5">
          <div class="container">
-           <h2>About Me</h2>
+           <h2 class="text-left mb-4">About Me</h2>
            <div class="row">
              <div class="col-lg-8 content">
-               <p>Currently a PhD student at the <a href="https://airexlab.cds.iisc.ac.in/">AIREX Lab</a> at the <a href="https://cds.iisc.ac.in/"">Department of Computational and Data Sciences</a> at <a href="https://iisc.ac.in">Indian Institute of Science</a>. My research interests include:</p>
+               <p>Currently a PhD student at the <a href="https://airexlab.cds.iisc.ac.in/">AIREX Lab</a> at the <a href="https://cds.iisc.ac.in/">Department of Computational and Data Sciences</a> at <a href="https://iisc.ac.in">Indian Institute of Science</a>. My research interests include:</p>
                <div class="tech-cards">
                  <div class="tech-card">Finite Element Methods</div>
                  <div class="tech-card">GPU Programming</div>
-                 <div class="tech-card">Reduced Order Modelling</div>
+                 <div class="tech-card">Scientific Machine Learning</div>
                  <div class="tech-card">Physics Informed Neural Networks</div>
                  <div class="tech-card">Computational Fluid Dynamics</div>
-
                </div>
-               <p style="margin-top: 20px;">I have three years of industry experience working as a software engineer at Accenture. I have also worked on the development of <a href="#">ParMooN</a>, our in-house FEM package written in C++, and I'm the lead developer of <a href="https://cmgcds.github.io/fastvpinns">FastVPINNs</a>, an efficient implementation of hp-VPINNs written in python</p>
+               <p class="mt-4">I have three years of industry experience working as a software engineer at Accenture. I have also worked on the development of <a href="#">ParMooN</a>, our in-house FEM package written in C++, and I'm the lead developer of <a href="https://cmgcds.github.io/fastvpinns">FastVPINNs</a>, an efficient implementation of hp-VPINNs written in python</p>
+               
+               <h4 class="mt-4">Skill Sets</h4>
+               <div class="skill-sets">
+                 <span class="skill-tag">C++</span>
+                 <span class="skill-tag">C</span>
+                 <span class="skill-tag">Python</span>
+                 <span class="skill-tag">Matlab</span>
+                 <span class="skill-tag">Tensorflow</span>
+                 <span class="skill-tag">Docker</span>
+                 <span class="skill-tag">Github Actions</span>
+                 <span class="skill-tag">deal-ii</span>
+                 <span class="skill-tag">Gmsh</span>
+                 <span class="skill-tag">Pointwise</span>
+                 <span class="skill-tag">CUDA</span>
+                 <span class="skill-tag">MPI</span>
+                 <span class="skill-tag">OpenMP</span>
+               </div>
              </div>
              <div class="col-lg-4">
                <div class="recent-highlights">
@@ -371,16 +387,16 @@
                    <p>Developing cutting-edge Physics Informed Neural Networks.</p>
                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                  </div>
-                 
                </div>
              </div>
            </div>
-           <div class="section-buttons">
+           
+           <div class="section-buttons mt-5">
              <a href="#education"><i class="fas fa-graduation-cap" style="margin-right: 10px;"></i> Education</a>
              <a href="#experience"><i class="fas fa-briefcase" style="margin-right: 10px;"></i> Experience</a>
              <a href="#teaching"><i class="fas fa-chalkboard-teacher" style="margin-right: 10px;"></i> Teaching</a>
              <a href="#publications"><i class="fas fa-book" style="margin-right: 10px;"></i> Publications</a>
-             <a href="#projects"><i class="fas fa-project-diagram" style="margin-right: 10px;"></i> Projects</a>
+             <a href="#add_main_projects"><i class="fas fa-project-diagram" style="margin-right: 10px;"></i> Projects</a>
              <a href="#certifications"><i class="fas fa-certificate" style="margin-right: 10px;"></i> Certifications</a>
              <a href="#awards"><i class="fas fa-trophy" style="margin-right: 10px;"></i> Awards</a>
            </div>
@@ -391,7 +407,7 @@
        
        <section id=education class=py-5>
           <div class=container>
-             <h3 class=text-center>Education</h3>
+             <h2 class=text-center>Education</h2>
              <div class="row justify-content-center py-5">
                 <div class="col-12 p-0">
                    <div class="row row align-items-center justify-content-center m-1 mb-4">
@@ -408,137 +424,144 @@
                                   </h6>
                                </a>
                                <div class=py-1>
+                                  Advisor: <a href="https://cds.iisc.ac.in/people/sashi">Prof. Sashikumaar Ganesan</a>
+                               </div>
+                               <div class="col-sm-12 col-md-12 col-lg-12 py-2">
+                                 <div class="activities-container">
+                                    <!-- <h2>Activities</h2> -->
+                                    <ul class="activities-tabs nav" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active" id="research-tab" data-bs-toggle="tab" data-bs-target="#research" type="button" role="tab" aria-controls="research" aria-selected="true">
+                                                <i class="fas fa-flask"></i> Research
+                                            </button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="organizational-tab" data-bs-toggle="tab" data-bs-target="#organizational" type="button" role="tab" aria-controls="organizational" aria-selected="false">
+                                                <i class="fas fa-users"></i> Organizational
+                                            </button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                          <button class="nav-link" id="coursework-tab" data-bs-toggle="tab" data-bs-target="#coursework" type="button" role="tab" aria-controls="coursework" aria-selected="false">
+                                              <i class="fas fa-book"></i> Course Work
+                                          </button>
+                                      </li>
+                                        
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="teaching-tab" data-bs-toggle="tab" data-bs-target="#teaching" type="button" role="tab" aria-controls="teaching" aria-selected="false">
+                                                <i class="fas fa-chalkboard-teacher"></i> Teaching
+                                            </button>
+                                        </li>
+                                        
+                                        <li class="nav-item" role="presentation">
+                                          <button class="nav-link" id="extracurricular-tab" data-bs-toggle="tab" data-bs-target="#extracurricular" type="button" role="tab" aria-controls="extracurricular" aria-selected="false">
+                                              <i class="fas fa-running"></i> Extracurricular
+                                          </button>
+                                      </li>
+                                    </ul>
+                                    <div class="tab-content" id="activities-tabContent">
+                                        <div class="tab-pane fade show active" id="research" role="tabpanel" aria-labelledby="research-tab">
+                                            <!-- <h4>Research Activities</h4> -->
+                                            <ul>
+                                                <li>Developed <a href="#" target="_blank">FastVPINNs</a>, an efficient implementation of hp-Variational Physics Informed Neural Networks, and applied it to solve complex problems such as the <a href="#" target="_blank">Incompressible Navier-Stokes Equations</a> and <a href="#" target="_blank">Singularly Perturbed Problems</a>.</li>
+                                                <li>Implemented <a href="#" target="_blank">GPU-Accelerated Particle Deposition</a> for human airway simulations using our in-house FEM package, <a href="#" target="_blank">ParMooN</a>.</li>
+                                                <li>Developed an <a href="#" target="_blank">ALE-based FEM</a> approach for simulating free surface flows in 3D domains.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="tab-pane fade" id="organizational" role="tabpanel" aria-labelledby="organizational-tab">
+                                            <!-- <h4>Organizational Activities</h4> -->
+                                            <ul>
+                                             <li>Conference Organizer for <a href="https://casml.cc" target="_blank">CASML-2024</a> (Conference on Applied AI and Scientific Machine Learning) to be held at IISc, Bangalore in Dec 2024.</li>
+                                             <li>Lead Student Organizer for the <a href="https://www.hcsa.uni-heidelberg.de/en/about-us/events-archive/indo-german-conference-on-computational-mathematics-igcm-2023-challenges-and-opportunities-towards" target="_blank">Indo-German Conference on Computational Mathematics</a> (March 2023).</li>
+                                             <li>Speaker and Organizer for the <a href="https://kiac.iisc.ac.in/activities/workshops/instructional-school-on-ai-and-ml-for-researchers/">Kotak-IISc Instructional School on AI & ML</a> (March 2023).</li>
+                                             <li>Lead Student Organizer for the "Parallel Finite Element Computing" workshop at IISc (Oct-2019).</li>
+                                             <li>Student Organizer for the <a href="https://www.easychair.org/cfp/igcm2019" target="_blank">Indo-German Conference on Computational Mathematics</a> (March 2019).</li>
+                                         </ul>
+                                        </div>
+                                        
+                                        <div class="tab-pane fade" id="teaching" role="tabpanel" aria-labelledby="teaching-tab">
+                                            <!-- <h4>Teaching Experience</h4> -->
+                                            For more details, please refer  <a href="/teaching">here</a>.
+                                        </div>
+                                        <div class="tab-pane fade" id="coursework" role="tabpanel" aria-labelledby="coursework-tab">
+                                            <!-- <h4>Relevant Course Work</h4> -->
+                                            <ul>
+                                                <li>Finite Element Methods: Theory and Algorithms (Grade A+)</li>
+                                                <li>Parallel Finite Element Computing (Grade A+)</li>
+                                                <li>Parallel Programming (Grade A+)</li>
+                                                <li>Computational Heat Transfer and Fluid Flow (Grade B+)</li>
+                                            </ul>
+                                        </div>
+                                        <div class="tab-pane fade" id="extracurricular" role="tabpanel" aria-labelledby="extracurricular-tab">
+                                          <!-- <h4>Extracurricular Activities</h4> -->
+                                          <ul>
+                                              <li>Keyboard player for IISc's Music Band Rhythmica - <a href="https://www.youtube.com/watch?v=LY4qQOjtdDE" target="_blank">Video Link</a></li>
+                                              <li>Member of CDS Wellness Committee from 2022-2023</li>
+                                          </ul>
+                                      </div>
+                                    </div>
+                                </div>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+                <div class="col-12 p-0">
+                   <div class="row row align-items-center justify-content-center m-1 mb-4">
+                      <div class=col-md-11>
+                         <div class=card>
+                            <div class=card-body>
+                               <div class=float-end>
+                                  <small>2011 - 2015</small>
+                               </div>
+                               <h5 class=card-title>Bachelor of Engineering (Mechanical)</h5>
+                               <a href=https://example.org target=_blank>
+                                  <h6>
+                                     Anna University, Chennai
+                                  </h6>
+                               </a>
+                               <div class=py-1>
                                   GPA:
                                   <i>
-                                  <small>8.0 out of 10.0</small>
+                                  <small>8.6 out of 10</small>
                                   </i>
                                </div>
-                               <div class="col-sm-12 col-md-12 col-lg-11 py-2">
-                                 <div class="activities-container px-3 pt-2">
-                                   <ul class="nav nav-pills mb-3 bg-transparent primary-font" id="activities-tab" role="tablist">
-                                     <li class="nav-item px-1 bg-transparent" role="presentation">
-                                       <button class="nav-link active bg-transparent" id="research-tab" data-bs-toggle="pill" data-bs-target="#research" type="button" role="tab" aria-controls="research" aria-selected="true">
-                                         <i class="fas fa-flask"></i> Research 
+                               <!-- COntet -->
+                               <div class="education-content py-1">
+                                 <div class="activities-container">
+                                   <ul class="activities-tabs nav" role="tablist">
+                                     <li class="nav-item" role="presentation">
+                                       <button class="nav-link active" id="ug-academic-tab" data-bs-toggle="tab" data-bs-target="#ug-academic" type="button" role="tab" aria-controls="ug-academic" aria-selected="true">
+                                         <i class="fas fa-graduation-cap"></i> Academic
                                        </button>
                                      </li>
-                                     <li class="nav-item px-1 bg-transparent" role="presentation">
-                                       <button class="nav-link bg-transparent" id="organizational-tab" data-bs-toggle="pill" data-bs-target="#organizational" type="button" role="tab" aria-controls="organizational" aria-selected="false">
-                                         <i class="fas fa-users"></i> Organizational 
-                                       </button>
-                                     </li>
-                                     <li class="nav-item px-1 bg-transparent" role="presentation">
-                                       <button class="nav-link bg-transparent" id="extracurricular-tab" data-bs-toggle="pill" data-bs-target="#extracurricular" type="button" role="tab" aria-controls="extracurricular" aria-selected="false">
+                                     <li class="nav-item" role="presentation">
+                                       <button class="nav-link" id="ug-extracurricular-tab" data-bs-toggle="tab" data-bs-target="#ug-extracurricular" type="button" role="tab" aria-controls="ug-extracurricular" aria-selected="false">
                                          <i class="fas fa-running"></i> Extracurricular
                                        </button>
                                      </li>
                                    </ul>
-                                   <div class="tab-content pb-5 pt-2 bg-transparent primary-font" id="activities-tabContent">
-                                     <div class="tab-pane fade show active bg-transparent" id="research" role="tabpanel" aria-labelledby="research-tab">
-                                       <h4>Research Activities</h4>
+                                   <div class="tab-content" id="ug-activities-tabContent">
+                                     <div class="tab-pane fade show active" id="ug-academic" role="tabpanel" aria-labelledby="ug-academic-tab">
                                        <ul>
-                                         <li>Developed <a href="#" target="_blank">FastVPINNs</a>, an efficient implementation of Variational Physics Informed Neural Networks, and applied it to solve complex problems such as the <a href="#" target="_blank">Incompressible Navier-Stokes Equations</a> and <a href="#" target="_blank">Singularly Perturbed Problems</a>.</li>
-                                         <li>Implemented <a href="#" target="_blank">GPU-Accelerated Particle Deposition</a> for human airway simulations using our in-house FEM package, <a href="#" target="_blank">ParMooN</a>.</li>
-                                         <li>Developed an <a href="#" target="_blank">ALE-based FEM</a> approach for simulating free surface flows in 3D domains.</li>
+                                         <li>Gold medalist for overall best outgoing student for batch 2011 to 2015</li>
                                        </ul>
                                      </div>
-                                     <div class="tab-pane fade bg-transparent" id="organizational" role="tabpanel" aria-labelledby="organizational-tab">
-                                       <h4>Organizational Activities</h4>
+                                     <div class="tab-pane fade" id="ug-extracurricular" role="tabpanel" aria-labelledby="ug-extracurricular-tab">
                                        <ul>
-                                         <li>Conference Organizer for <a href="https://casml.cc" target="_blank">CASML-2024</a> (Conference on Applied AI and Scientific Machine Learning) to be held at IISc, Bangalore in December 2024.</li>
-                                         <li>Lead Student Organizer for the "Parallel Finite Element Computing" workshop at IISc (October 2019).</li>
-                                         <li>Speaker and Organizer for the Kotak-IISc Instructional School on AI & ML (March 2023).</li>
-                                         <li>Lead Student Organizer for the <a href="#" target="_blank">Indo-German Conference on Computational Mathematics</a> (March 2023).</li>
-                                       </ul>
-                                     </div>
-                                     <div class="tab-pane fade bg-transparent" id="extracurricular" role="tabpanel" aria-labelledby="extracurricular-tab">
-                                       <h4>Extracurricular Activities</h4>
-                                       <ul>
-                                         <li>Active member of the IISc Coding Club, organizing coding competitions and workshops.</li>
-                                         <li>Volunteer for the annual IISc Open Day, showcasing research projects to the public.</li>
-                                         <li>Participated in the Inter-IIT Tech Meet, representing IISc in the Machine Learning challenge.</li>
+                                         <li>NCC C-Certificate holder and was Cadet Under Officer(CUO)</li>
                                        </ul>
                                      </div>
                                    </div>
                                  </div>
                                </div>
+                               
                             </div>
                          </div>
                       </div>
                    </div>
                 </div>
-                <div class="col-12 p-0">
-                   <div class="row row align-items-center justify-content-center m-1 mb-4">
-                      <div class=col-md-11>
-                         <div class=card>
-                            <div class=card-body>
-                               <div class=float-end>
-                                  <small>2009 - 2013</small>
-                               </div>
-                               <h5 class=card-title>Bachelor of Science in Computer Science</h5>
-                               <a href=https://example.org target=_blank>
-                                  <h6>
-                                     Massachusetts Institute of Technology
-                                  </h6>
-                               </a>
-                               <div class=py-1>
-                                  GPA:
-                                  <i>
-                                  <small>3.9 out of 5.0</small>
-                                  </i>
-                               </div>
-                               <div class="py-1 education-content">
-                                  <p>I Publiced two papers in the ACM SIGCHI Conference on Artificial Intelligence.</p>
-                                  <ul>
-                                     <li><a href=https://example.com>Fast and Accurate Object Detection with a Single Convolutional Neural Network</a></li>
-                                     <li>Face mask detection using a single convolutional neural network.</li>
-                                  </ul>
-                                  <p>Extracurricular Activities</p>
-                                  <ul>
-                                     <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                                     <li>Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.</li>
-                                  </ul>
-                               </div>
-                               <div class=py-1>
-                                  <a href=https://example.com class=btn>
-                                  My academic record
-                                  </a>
-                               </div>
-                            </div>
-                         </div>
-                      </div>
-                   </div>
-                </div>
-                <div class="col-12 p-0">
-                   <div class="row row align-items-center justify-content-center m-1 mb-4">
-                      <div class=col-md-11>
-                         <div class=card>
-                            <div class=card-body>
-                               <div class=float-end>
-                                  <small></small>
-                               </div>
-                               <h5 class=card-title>High School</h5>
-                               <a href=https://example.org target=_blank>
-                                  <h6>
-                                     Thomas Jefferson High School for Science and Technology.
-                                  </h6>
-                               </a>
-                               <div class=py-1>
-                                  GPA:
-                                  <i>
-                                  <small>4.2 out of 5.0</small>
-                                  </i>
-                               </div>
-                               <div class="py-1 education-content"></div>
-                               <div class=py-1>
-                                  <a href=https://example.com class=btn>
-                                  Featured
-                                  </a>
-                               </div>
-                            </div>
-                         </div>
-                      </div>
-                   </div>
-                </div>
+
              </div>
           </div>
        </section>
@@ -546,9 +569,9 @@
 
        <section id=experience class=py-5>
          <div class=container>
-            <h3 class=text-center>Experience</h3>
+            <h2 class=text-center>Experience</h2>
             <div class="row justify-content-center">
-               <div class="col-sm-12 col-md-8 col-lg-8 py-5">
+               <div class="col-sm-12 col-md-12 col-lg-11 py-5">
                   <div class="experience-container px-3 pt-2">
                      <ul class="nav nav-pills mb-3 bg-transparent primary-font" id=pills-tab role=tablist>
                         <li class="nav-item px-1 bg-transparent" role=presentation>
@@ -625,112 +648,51 @@
             </div>
          </div>
       </section>
-       <section id=projects class=py-5>
-          <div class=container>
-             <h3 class=text-center>Projects</h3>
-             <div class="row justify-content-center px-3 px-md-5">
-                <div class="col-lg-4 col-md-6 my-3">
-                   <div class="card my-3 h-100" title="Thivin Anandh">
-                      <div class=card-head>
-                         <img class=card-img-top src=/images/projects/profile.png alt="Thivin Anandh">
-                      </div>
-                      <div class="card-body bg-transparent p-3">
-                         <div class="pb-2 bg-transparent">
-                            <span class="badge badge-secondary">Hugo</span>
-                            <span class="badge badge-secondary">Bootstrap</span>
-                            <span class="badge badge-secondary">Javascript</span>
-                         </div>
-                         <h5 class="card-title bg-transparent mt-1">Thivin Anandh</h5>
-                         <div class="card-text bg-transparent secondary-font">
-                            A highly customizable and mobile first Hugo template for personal portfolio and blog.
-                         </div>
-                      </div>
-                      <div class="card-footer py-3">
-                         <span class="m-1 mx-2">
-                         <a href="mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f" target=_blank>
-                         <i class="fa fa-envelope"></i>
-                         </a>
-                         </span>
-                         <span class="m-1 mx-2">
-                         <a href=https://github.com/gurusabarish/hugo-profile target=_blank>
-                         <i class="fab fa-github"></i>
-                         </a>
-                         </span>
-                         <span class="m-1 mx-2">
-                         <a href="https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile" target=_blank>
-                         <i class="fab fa-twitter"></i>
-                         </a>
-                         </span>
-                         <span class=float-end>
-                         <a class="btn btn-sm" href=https://hugo-profile.netlify.app target=_blank>
-                         Demo
-                         </a>
-                         </span>
-                      </div>
-                   </div>
-                </div>
-                <div class="col-lg-4 col-md-6 my-3">
-                   <div class="card my-3 h-100" title="Image Converter">
-                      <div class=card-head>
-                         <img class=card-img-top src=/images/projects/converter.jpg alt="Image Converter">
-                      </div>
-                      <div class="card-body bg-transparent p-3">
-                         <div class="pb-2 bg-transparent">
-                            <span class="badge badge-secondary">Django</span>
-                            <span class="badge badge-secondary">Bootstrap</span>
-                         </div>
-                         <h5 class="card-title bg-transparent mt-1">Image Converter</h5>
-                         <div class="card-text bg-transparent secondary-font">
-                            A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
-                         </div>
-                      </div>
-                      <div class="card-footer py-3">
-                         <span class="m-1 mx-2">
-                         <a href=https://github.com/gurusabarish/converter target=_blank>
-                         <i class="fab fa-github"></i>
-                         </a>
-                         </span>
-                         <span class=float-end>
-                         <a class="btn btn-sm" href=https://django-converter.herokuapp.com target=_blank>
-                         Demo
-                         </a>
-                         </span>
-                      </div>
-                   </div>
-                </div>
-                <div class="col-lg-4 col-md-6 my-3">
-                   <div class="card my-3 h-100" title="Thivin Anandh V2">
-                      <div class=card-head>
-                         <img class=card-img-top src=/images/projects/profile2.jpg alt="Thivin Anandh V2">
-                      </div>
-                      <div class="card-body bg-transparent p-3">
-                         <div class="pb-2 bg-transparent">
-                            <span class="badge badge-secondary">Hugo</span>
-                            <span class="badge badge-secondary">Bootstrap</span>
-                            <span class="badge badge-secondary">Javascript</span>
-                         </div>
-                         <h5 class="card-title bg-transparent mt-1">Thivin Anandh V2</h5>
-                         <div class="card-text bg-transparent secondary-font">
-                            A clean and simple Hugo template for personal portfolio and blog.
-                         </div>
-                      </div>
-                      <div class="card-footer py-3">
-                         <span class="m-1 mx-2">
-                         <a href=https://github.com/gurusabarish/HugoProfileV2 target=_blank>
-                         <i class="fab fa-github"></i>
-                         </a>
-                         </span>
-                         <span class=float-end>
-                         <a class="btn btn-sm" href=https://hugo-profile-2.netlify.app target=_blank>
-                         Demo V2
-                         </a>
-                         </span>
-                      </div>
-                   </div>
-                </div>
+
+      <section id="publications_section" class="py-5_publication">
+         <div class="container_publication">
+             <h2 class="title_publication">Publications</h2>
+             <div class="tabs_publication">
+                 <button class="tab-btn_publication active_publication" data-tab="papers_publication">Papers</button>
+                 <button class="tab-btn_publication" data-tab="conferences_publication">Conferences</button>
+                 <button class="tab-btn_publication" data-tab="book_chapters_publication">Book Chapters</button>
              </div>
-          </div>
-       </section>
+             <div id="papers_publication" class="tab-content_publication active_publication">
+                 <div class="publication-item_publication">
+                     <h3>FastVPINNs: Tensor-Driven Acceleration of VPINNs for Complex Geometries</h3>
+                     <p class="authors_publication"><span class="author-highlight_publication">Thivin Anandh</span>, Divij Ghose, Himanshu Jain, Sashikumaar Ganesan</p>
+                     <p class="date_publication">2024</p>
+                     <div class="links_publication">
+                         <a href="https://arxiv.org/pdf/2404.12063" class="btn_publication btn-small_publication" target="_blank">PDF</a>
+                         <a href="https://arxiv.org/abs/2404.12063" class="btn_publication btn-small_publication" target="_blank">arXiv</a>
+                         <a href="https://github.com/thivinanandh/FastVPINNs" class="btn_publication btn-small_publication" target="_blank">GitHub</a>
+                     </div>
+                 </div>
+                 <!-- Repeat this structure for other papers -->
+             </div>
+             <div id="conferences_publication" class="tab-content_publication">
+                 <div class="publication-item_publication">
+                     <h3>Fast and Efficient hp-Variational PINNS framework for solving the Incompressible Navier-Stokes equations</h3>
+                     <p class="authors_publication"><span class="author-highlight_publication">Thivin Anandh</span>, Divij Ghose, Sashikumaar Ganesan</p>
+                     <p class="conference_publication">International Conference on Computational Fluid Dynamics (ICCFD-12)</p>
+                     <p class="date_publication">2024, Kobe, Japan</p>
+                 </div>
+                 <!-- Repeat this structure for other conferences -->
+             </div>
+             <div id="book_chapters_publication" class="tab-content_publication">
+                 <div class="publication-item_publication">
+                     <h3>Computational Ship Hydrodynamics: Modeling and Simulation</h3>
+                     <p class="authors_publication">Sashikumaar Ganesan, Bhanu Teja, <span class="author-highlight_publication">Thivin Anandh</span></p>
+                     <p class="book_publication">Computational Science and its Applications, 1st edition -2020</p>
+                     <p class="publisher_publication">Taylor & Francis</p>
+                     <div class="links_publication">
+                         <a href="https://www.taylorfrancis.com/chapters/edit/10.1201/9780429288739-10/computational-ship-hydrodynamics-modeling-simulation-sashikumaar-ganesan-bhanu-teja-thivin-anandh" class="btn_publication btn-small_publication" target="_blank">Link</a>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </section>
+
        <section id=achievements class=py-5>
           <div class=container>
              <h3 class=text-center>Achievements</h3>
@@ -989,6 +951,17 @@
     <script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
     <script>var tooltipTriggerList,tooltipList;document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove('dark'),localStorage.setItem("pref-theme",'light')):(document.body.classList.add('dark'),localStorage.setItem("pref-theme",'dark'))}),tooltipTriggerList=[].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]')),tooltipList=tooltipTriggerList.map(function(a){return new bootstrap.Tooltip(a)})</script>
     <script src=/js/search.js></script>
+    <script>
+      document.querySelectorAll('.tab-btn_publication').forEach(button => {
+          button.addEventListener('click', () => {
+              const tab = button.dataset.tab;
+              document.querySelectorAll('.tab-btn_publication').forEach(btn => btn.classList.remove('active_publication'));
+              document.querySelectorAll('.tab-content_publication').forEach(content => content.classList.remove('active_publication'));
+              button.classList.add('active_publication');
+              document.getElementById(tab).classList.add('active_publication');
+          });
+      });
+  </script>
     <section id=search-content class=py-2>
        <div class=container id=search-results></div>
     </section>
