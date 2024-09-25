@@ -443,7 +443,7 @@ header .navbar.animate {
 
 #about .section-buttons a:hover {
     background-color: var(--primary-color);
-    color: var(--background-color);
+    color: var(--background-color) !important;
 }
 
 #about .section-buttons a i {
@@ -501,7 +501,8 @@ header .navbar.animate {
 #experience h2 {
     color: var(--primary-color) !important;
     font-size: 2.8rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
     font-family: 'Poppins', sans-serif;
     text-align: center;
 }
@@ -531,9 +532,16 @@ header .navbar.animate {
 
 #experience .experience-container {
     background-color: var(--secondary-color) !important;
-    border-radius: .75rem;
-    box-shadow: 0px 8px 56px rgb(15 80 100 / 16%);
+    border-radius: 1.5rem;
+    box-shadow:0px 8px 56px rgb(15 80 100 / 16%);
+    border: 2px solid var(--text-secondary-color);
 }
+
+#experience .experience-container:hover {
+    transition: 0.3s;
+    box-shadow: 0 4px 11px rgb(15 80 100 / 16%);
+    border: 2px solid var(--primary-color) !important;
+}   
 
 #experience .nav-item .nav-link {
     color: var(--text-color) !important;
@@ -626,6 +634,8 @@ header .navbar.animate {
 
 /* Education */
 
+
+
 #education h2 {
     color: var(--primary-color) !important;
     font-size: 2.8rem;
@@ -637,6 +647,7 @@ header .navbar.animate {
 
 #education .container > h3 {
     color: var(--text-secondary-color) !important;
+    font-family: 'Poppins', sans-serif;
 }
 
 #education .row .index {
@@ -649,6 +660,7 @@ header .navbar.animate {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     font-weight: bold;
+    font-family: 'Poppins', sans-serif;
 }
 
 #education .card * {
@@ -666,6 +678,7 @@ header .navbar.animate {
 #education .card .card-body {
     border-radius: 1.5rem;
     padding: 2rem;
+    font-family: 'Alata', sans-serif !important;
 }
 
 @media all and (max-width:768px) {
@@ -797,208 +810,223 @@ header .navbar.animate {
 }
 
 /* PROJECTS */
-.add_main_py-5 {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+#projects .card {
+    transition: all 0.3s ease;
+    height: 100%;
+    background-color: var(--secondary-color) !important;
 }
 
-.add_main_container {
-    width: 90%;
+#projects .section-title {
+    color: var(--primary-color);
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+#projects .card-text {
+    color: var(--text-color);
+    font-family: 'Alata', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    height: auto;
+    opacity: 0.8;
+}
+
+#projects h4 {
+    color: var(--text-color);
+    font-family: 'Alata', sans-serif !important; 
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: .9rem;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 1.5rem;
+}
+
+#projects .card:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+#projects .card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+#projects .card-text {
+    flex-grow: 1;
+}
+
+#projects .btn {
+    align-self: flex-start;
+    font-family: 'Poppins', sans-serif;
+    color: var(--background-color) !important;
+    background-color: var(--primary-color) !important;
+}
+
+#projects .btn:hover {
+    color: var(--secondary-color);
+}
+
+@media (max-width: 767px) {
+    #projects .col-md-6 {
+        margin-bottom: 1rem;
+    }
+}
+
+/* CERTIFICATIONS */
+#certifications {
+    padding: 3rem 0;
+    background-color: var(--background-color);
+}
+
+
+
+#certifications .container {
     max-width: 1000px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
-.add_main_title {
-    text-align: center;
+#certifications .section-title {
+    color: var(--primary-color);
+    font-size: 2.8rem;
     margin-bottom: 2rem;
-    font-size: 2.5rem;
-    color:var(--primary-color);
     font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.2;
 }
 
-.add_main_project_wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+#certifications .certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
 }
 
-.add_main_project_item {
-    flex: 1 1 400px;
-    display: flex;
-    background-color: var(--background-color);
-    font-family: 'Poppins', sans-serif;
+#certifications .certification-card {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.add_main_project_item:hover {
-    /* transform: translateY(-5px);
-     */
-    box-shadow: 0 6px 12px var(--primary-color);
-}
-
-.add_main_project_details {
-    flex: 1;
-    padding: 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    height: 100%; /* Ensure all cards have the same height */
 }
 
-.add_main_project_visual {
-    flex: 1;
-    min-height: 250px;
+#certifications .certification-content {
     background-color: var(--secondary-color);
-    overflow: hidden;
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribute space between info and action */
 }
 
-.add_main_project_image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+#certifications .certification-info {
+    flex-grow: 1; /* Allow info to grow and push button to bottom */
 }
 
-.add_main_project_heading {
-    color: var(--text-color);
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
+
+#certifications .certification-card:hover {
+    /* transform: translateY(-1px); */
+    border: 2px solid var(--primary-color) !important;
 }
 
-.add_main_project_description {
-    color: var(--text-color);
-    margin-bottom: 1.5rem;
-    font-size: 1rem;
-    line-height: 1.6;
-    font-family: 'Alata', sans-serif;
-    opacity: 0.8;
-}
-
-.add_main_project_link {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background-color: var(--primary-color);
-    color: var(--text-color);
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    font-size: 0.9rem;
-}
-
-.add_main_project_link:hover {
-    /* background-color: var(--text-color); */
-    color: var(--text-secondary-color);
-}
-
-@media (max-width: 768px) {
-    .add_main_project_item {
-        flex: 1 1 100%;
-    }
-}
-
-/* PUBLICATIONS  */
-.py-5_publication {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-}
-
-.container_publication {
-    width: 90%;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.title_publication {
-    text-align: center;
-    margin-bottom: 2rem;
-    font-size: 2.5rem;
-    color: var(--text-color);
-}
-
-.tabs_publication {
+#certifications .certification-logo-container {
+    background-color: var(--secondary-color);
+    padding: 1rem;
     display: flex;
     justify-content: center;
-    margin-bottom: 2rem;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
 }
 
-.tab-btn_publication {
-    background-color: var(--secondary-color);
-    border: none;
-    color: var(--text-color);
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+#certifications img {
+    border-radius: 10px;
 }
 
-.tab-btn_publication.active_publication {
-    background-color: var(--primary-color);
-    color: var(--background-color);
-}
-
-.tab-content_publication {
-    display: none;
-}
-
-.tab-content_publication.active_publication {
+#certifications .certification-logo {
+    max-width: 230px;
+    max-height: 100px;
+    min-height: 100px;
+    object-fit: contain;
     display: block;
 }
 
-.publication-item_publication {
-    background-color: var(--secondary-color);
+#certifications .certification-content {
+    background-color: var(--background-color);
     padding: 1.5rem;
-    margin-bottom: 1.5rem;
-    border-radius: 5px;
-}
-
-.publication-item_publication h3 {
-    color: var(--primary-color);
-    margin-bottom: 0.5rem;
-}
-
-.authors_publication, .conference_publication, .book_publication, .publisher_publication, .journal_publication {
-    color: var(--text-secondary-color);
-    margin-bottom: 0.5rem;
-}
-
-.author-highlight_publication {
-    font-weight: bold;
-    color: var(--primary-color);
-}
-
-.date_publication {
-    color: var(--text-secondary-color);
-    font-style: italic;
-    margin-bottom: 1rem;
-}
-
-.links_publication {
+    flex-grow: 1;
     display: flex;
-    gap: 0.5rem;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
-.btn_publication {
+#certifications .certification-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+    font-family: 'Alata', sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#certifications .certification-provider
+{
+    font-family: 'Alata', sans-serif;
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    text-align: center;
+    font-weight: 600;
+}
+#certifications .certification-date,
+#certifications .certification-id {
+    font-family: 'Alata', sans-serif;
+    font-size: 0.9rem;
+    color: var(--text-color-light);
+    margin-bottom: 0.25rem;
+    text-align: center;
+    font-style: italic;
+}
+
+#certifications .certification-action
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+#certifications .certification-button {
     display: inline-block;
-    padding: 0.3rem 0.7rem;
+    margin-top: auto;
+    padding: 0.5rem 1rem;
     background-color: var(--primary-color);
     color: var(--background-color);
     text-decoration: none;
-    border-radius: 3px;
+    border-radius: 5px;
+    font-family: 'Alata', sans-serif;
     font-size: 0.9rem;
     transition: background-color 0.3s ease;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
 }
 
-.btn_publication:hover {
+#certifications .certification-button:hover {
     background-color: var(--primary-color-dark);
 }
 
-.btn-small_publication {
-    font-size: 0.8rem;
-    padding: 0.2rem 0.5rem;
+@media (max-width: 768px) {
+    #certifications .certifications-grid {
+        grid-template-columns: 1fr;
+    }
 }
-
 
 /* achievements */
 
@@ -1105,4 +1133,267 @@ header .navbar.animate {
     border-radius: 0.5rem;
     box-shadow: 0px 8px 56px rgb(15 80 100 / 5%);
     padding: .5rem 1rem;
+}
+
+/* PUBLICATIONS */
+#publications_section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+
+#publications_section h3 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    /* text-align: center; */
+}
+
+#publications_section .container_publication {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#publications_section h5 {
+    color: var(--text-color);
+    
+    font-family: 'Alata', sans-serif !important; 
+    /* text-align: center; */
+    /* font-weight: bold; */
+}   
+
+#publications_section .title_publication {
+    color: var(--primary-color) !important;
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-bottom: 2rem;
+    /* font-weight: bold; */
+}
+
+#publications_section .tabs_publication {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9  rem;
+}
+
+#publications_section .journal_date_publication {
+    color: var(--text-secondary-color);
+    font-family: 'Alata', sans-serif;
+    font-size: 0.9rem;
+}
+
+#publications_section .tab-btn_publication {
+    background-color: var(--secondary-color);
+    border: none;
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    /* border-radius: 0.3rem; */
+}
+
+#publications_section .tab-btn_publication.active_publication {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    font-weight: 500;
+    font-family: 'Alata', sans-serif;
+}
+
+#publications_section .tab-content_publication {
+    display: none;
+}
+
+#publications_section .tab-content_publication.active_publication {
+    display: block;
+}
+
+#publications_section .publication-item_publication {
+    background-color: var(--secondary-color);
+    padding: 1.5rem;
+    margin-bottom: 1.2rem;
+    border-radius: 0.5rem;
+}
+
+
+#publications_section .publication-item_publication:hover {
+    background-color: var(--secondary-color) !important;
+    border-radius: 0.8rem;
+    box-shadow: 0px 8px 56px rgb(15 80 100 / 16%);
+    border: 2px solid var(--primary-color) !important;;
+    transition: 0.5s;
+}
+
+
+#publications_section .publication-item_publication h3 {
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+    /* font-family: 'Poppins', sans-serif; */
+    /* font-size: 1.2rem; */
+    /* font-weight: 600; */
+}
+
+#publications_section .authors_publication,
+#publications_section .conference_publication,
+#publications_section .book_publication,
+#publications_section .publisher_publication,
+#publications_section .journal_publication {
+    color: var(--text-secondary-color);
+    margin-bottom: 0.5rem;
+    font-family: 'Alata', sans-serif;
+}
+
+
+#publications_section .author-highlight_publication {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+#publications_section .date_publication {
+    color: var(--text-secondary-color);
+    font-style: italic;
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+#publications_section .links_publication {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    font-family: 'Poppins', sans-serif; 
+}
+
+#publications_section .btn_publication {
+    display: inline-block;
+    padding: 0.3rem 0.7rem;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+#publications_section .btn_publication:hover {
+    background-color: var(--primary-color-dark);
+}
+
+#publications_section .btn-small_publication {
+    font-size: 0.8rem;
+    padding: 0.2rem 0.5rem;
+}
+
+/* FLoating Button */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.floating-theme-toggle {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    min-width: 60px;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    border: 2px solid var(--text-color);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+.floating-theme-toggle:hover {
+    background-color: var(--primary-color-dark);
+    width: 130px;
+    transition: all 0.3s ease;
+    border: 2px solid var(--primary-color);
+}
+
+.theme-icon {
+    margin-right: 0px;
+    transition: all 0.3s ease;
+}
+
+#sun-icon {
+    display: none;
+    transition: all 0.3s ease;
+}
+
+.dark #moon-icon {
+    display: none;
+    transition: all 0.3s ease;
+}
+
+.dark #sun-icon {
+    display: inline;
+    transition: all 0.3s ease;
+}
+
+.theme-text {
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.dark .floating-theme-toggle .theme-text {
+    opacity: 0;
+    transform: translateX(20px);
+    transition: all 0.3s ease;
+    /* margin-left: 10px; */
+}
+
+.dark .floating-theme-toggle:hover .theme-text {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 0.3s ease;
+}
+
+.dark .floating-theme-toggle:hover .theme-text::before {
+    content: 'Light';
+    transition: all 0.3s ease;
+}
+
+.floating-theme-toggle:hover .theme-text::before {
+    content: 'Dark';
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .floating-theme-toggle {
+        width: 60px;
+        transition: all 0.3s ease;
+    }
+
+    .floating-theme-toggle:hover {
+        width: 120px;
+        transition: all 0.3s ease;
+    }
+
+    .theme-text {
+        opacity: 0;
+        transform: translateX(20px);
+        transition: all 0.3s ease;
+    }
+
+    .floating-theme-toggle:hover .theme-text {
+        opacity: 1;
+        transform: translateX(0);
+        transition: all 0.3s ease;
+    }
 }

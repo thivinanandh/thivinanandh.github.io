@@ -29,7 +29,8 @@
     <link rel=stylesheet href=/css/footer.css media=all>
     <link rel=stylesheet href=/css/theme.css media=all>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <style>:root{--text-color:#343a40;--text-secondary-color:#6c757d;--text-link-color:#007bff;--background-color:#eaedf0;--secondary-background-color:#64ffda1a;--primary-color:#007bff;--secondary-color:#f8f9fa;--text-color-dark:#e4e6eb;--text-secondary-color-dark:#b0b3b8;--text-link-color-dark:#5465ce;--background-color-dark:#080a0c;--secondary-background-color-dark:#161418;--primary-color-dark:#5465ce;--secondary-color-dark:#161418}body{font-size:1rem;font-weight:400;line-height:1.5;text-align:left}html{background-color:var(--background-color)!important}body::-webkit-scrollbar{height:0;width:8px;background-color:var(--background-color)}::-webkit-scrollbar-track{border-radius:1rem}::-webkit-scrollbar-thumb{border-radius:1rem;background:#b0b0b0;outline:1px solid var(--background-color)}#search-content::-webkit-scrollbar{width:.5em;height:.1em;background-color:var(--background-color)}</style>
+    <style>:root{--text-color:#343a40;--text-secondary-color:#6c757d;--text-link-color:#007bff;--background-color:#eaedf0;--secondary-background-color:#64ffda1a;--primary-color:#007bff;--secondary-color:#f8f9fa;--text-color-dark:#e4e6eb;--text-secondary-color-dark:#b0b3b8;--text-link-color-dark:#5465ce;--background-color-dark:#040404;--secondary-background-color-dark:#0c0c0c;--primary-color-dark:#5465ce;--secondary-color-dark:#0c0c0c}body{font-size:1rem;font-weight:400;line-height:1.5;text-align:left}html{background-color:var(--background-color)!important}body::-webkit-scrollbar{height:0;width:8px;background-color:var(--background-color)}::-webkit-scrollbar-track{border-radius:1rem}::-webkit-scrollbar-thumb{border-radius:1rem;background:#b0b0b0;outline:1px solid var(--background-color)}#search-content::-webkit-scrollbar{width:.5em;height:.1em;background-color:var(--background-color)}</style>
+    
     <meta name=description content="Text about my cool site">
     <link rel=stylesheet href=/css/index.css media=all>
     <link rel=stylesheet href=/css/projects.css media=all>
@@ -116,7 +117,7 @@
 }
 
 .section-card h4 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Alata', sans-serif;
     font-weight: 500;
     margin-bottom: 1.2rem;
     margin-top: 1.2rem;
@@ -135,22 +136,25 @@
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
     width: calc(50% - 14px);
     transition: all 0.3s ease;
+    border: 0px solid var(--primary-color);
 }
 
 .project-card:hover {
-    /* transform: translateY(-5px); */
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    /* transform: translateY(-1px); */
+    /* box-shadow: 0 4px 6px rgba(0,0,0,0.1); */
     border: 2px solid var(--primary-color);
+    transition: all 0.3s ease;
 }
 
 .project-card h5 {
-    color: var(--text-color);
+    color: var(--primary-color);
     margin-bottom: 10px;
     font-family: 'Poppins', sans-serif;
+    a
 }
 
 .project-card p {
-    color: var(--text-secondary-color);
+    color: var(--text-color);
     font-family: 'Alata', sans-serif;
     font-weight: 300;
     opacity: 0.8;
@@ -159,8 +163,8 @@
 .github-btn {
     display: inline-flex;
     align-items: center;
-    background-color: #24292e;
-    color: var(--text-color);
+    background-color: #121417;
+    color: rgb(240, 236, 236);
     font-family: 'Poppins', sans-serif;
     padding: 5px 10px;
     border-radius: 4px;
@@ -170,8 +174,10 @@
 }
 
 .github-btn:hover {
-    background-color: var(--primary-color); 
-    color: var(--text-color)
+    background-color: rgb(240, 236, 236);
+    color: #121417;
+    border: 2px solid #121417;
+    transition: background-color 0.3s ease;
 }
 
 .github-btn i {
@@ -185,7 +191,7 @@
 .btn {
     font-family: 'Poppins', sans-serif !important;
     font-size: 0.8rem !important;
-    color: var(--text-color) !important;
+    color: var(--background-color) !important;
     background-color: var(--primary-color) !important;
     border: 2px solid var(--primary-color) !important;
     margin-top: 0.2rem !important;
@@ -713,6 +719,43 @@
     <section id=search-content class=py-2>
        <div class=container id=search-results></div>
     </section>
+    <button id="floating-theme-toggle" class="floating-theme-toggle">
+        <svg id="moon-icon" class="theme-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+        <svg id="sun-icon" class="theme-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+        </svg>
+        <span class="theme-text"></span>
+    </button>
+  
+    <script>
+     var tooltipTriggerList, tooltipList;
+  
+     document.getElementById("floating-theme-toggle").addEventListener("click", () => {
+         console.log("Toggle change");
+         if (document.body.classList.contains("dark")) {
+             document.body.classList.remove('dark');
+             localStorage.setItem("pref-theme", 'light');
+         } else {
+             document.body.classList.add('dark');
+             localStorage.setItem("pref-theme", 'dark');
+         }
+     });
+  
+     tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+     tooltipList = tooltipTriggerList.map(function(a) {
+         return new bootstrap.Tooltip(a);
+     });
+  </script>
 </body>
 
 </html>
