@@ -1035,7 +1035,12 @@ header .navbar.animate {
 }
 
 #achievements h3 {
-    color: var(--text-secondary-color) !important;
+    color: var(--primary-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.8rem;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.2;
 }
 
 #achievements .card {
@@ -1046,6 +1051,7 @@ header .navbar.animate {
     /* transform: translate3d(0, 0, 0); */
     transition: box-shadow .2s linear,opacity .2s linear;
     border: 2px solid transparent;
+    font-family: 'Alata', sans-serif;
 }
 
 #achievements a.card {
@@ -1055,6 +1061,7 @@ header .navbar.animate {
 #achievements .card h5 {
     color: var(--text-color) !important;
     opacity: 0.9;
+    font-family: 'Alata', sans-serif;
 }
 
 #achievements .card:hover {
@@ -1069,6 +1076,7 @@ header .navbar.animate {
 #achievements .card-text {
     background-color: var(--secondary-color) !important;
     color: var(--text-secondary-color) !important;
+    font-family: 'Alata', sans-serif;
 }
 
 #achievements img {
