@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylized Countdown Timer</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(45deg, #3498db, #8e44ad);
+        }
+        .countdown-container {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .time {
+            font-size: 3em;
+            font-weight: bold;
+            color: #fff;
+        }
+        .label {
+            font-size: 0.8em;
+            text-transform: uppercase;
+            color: #ddd;
+        }
+        .message {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #fff;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="countdown-container">
+        <div class="countdown">
+            <div>
+                <div id="days" class="time">00</div>
+                <div class="label">Days</div>
+            </div>
+            <div>
+                <div id="hours" class="time">00</div>
+                <div class="label">Hours</div>
+            </div>
+            <div>
+                <div id="minutes" class="time">00</div>
+                <div class="label">Minutes</div>
+            </div>
+            <div>
+                <div id="seconds" class="time">00</div>
+                <div class="label">Seconds</div>
+            </div>
+        </div>
+        <div class="message">Time to message A.H regarding FBVPNs</div>
+    </div>
+
+    <script>
+        const countDownDate = new Date("Oct 7, 2024 11:00:00").getTime();
+
+        const countdownFunction = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = countDownDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerHTML = days.toString().padStart(2, '0');
+            document.getElementById("hours").innerHTML = hours.toString().padStart(2, '0');
+            document.getElementById("minutes").innerHTML = minutes.toString().padStart(2, '0');
+            document.getElementById("seconds").innerHTML = seconds.toString().padStart(2, '0');
+
+            if (distance < 0) {
+                clearInterval(countdownFunction);
+                document.querySelector(".countdown-container").innerHTML = "The time has come!";
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
