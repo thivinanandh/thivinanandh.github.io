@@ -351,11 +351,11 @@
                             <h3>FastVPINNs</h3>
                             <h4>Fast and efficient hp-Variational Physics-Informed Neural Networks for solving PDEs</h4>
                             <p>We propose a novel tensor based method to compute variational loss, which leads to 100x speedup in training time when compared to the existing implementations.</p>
-                            <a href="#" class="btn btn-primary read-more">Read More</a>
+                            <a href="projects/fastvpinns.html" class="btn btn-primary read-more">Read More</a>
                         </div>
                     </div>
                 </div>
-                <!-- Add more project cards here -->
+                <!-- GPU SIMINHALE -->
                 <div class="project-card" data-tags="fem,hpc">
                     <div class="row">
                         <div class="col-md-4">
@@ -367,7 +367,7 @@
                             <h3>GPU-Accelerated particle tracking</h3>
                             <h4>FEM based Lagrangian particle tracking in Human air pathways</h4>
                             <p>We have implemented a GPU accelerated FEM solver for Lagrangian particle tracking in human air pathways. The framework is implemented in CUDA using the FEM library ParMooN. We achieved a speed up of 80x when compared to the sequential implementation. </p>
-                            <a href="#" class="btn btn-primary read-more">Read More</a>
+                            <a href="projects/gpu_siminhale.html" class="btn btn-primary read-more">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -383,7 +383,7 @@
                             <h3>hp-VPINNs for Incompressible Navier-Stokes Equations</h3>
                             <h4>FastVPINNs implementation for vector valued problems </h4>
                             <p>We extend the implemetation of hp-VPINNs for vector valued problems, such as Burgers equation and the incompressible Navier-Stokes equations. We have solved Lid-Driven Cavity, flow past a cylinder, Falkner-Skan boundary layer flow problems etc. We have achieved a 2.4x speedup in training time when compared to the existing PINNsimplementations.</p>
-                            <a href="#" class="btn btn-primary read-more">Read More</a>
+                            <a href="projects/fastvpinns_nse2d.html" class="btn btn-primary read-more">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -400,7 +400,7 @@
                             <h3>Digital Shadowing</h3>
                             <h4>PINNs + DMD based framework for realtime moitoring of wind farms</h4>
                             <p>We present a novel simulation framework that combines Physics Informed Neural Networks (PINNs) with Dynamic Mode Decomposition (DMD) for rapid fluid flow simulations in complex domains. This lightweight, flexible framework is designed to create simulation-based Digital Twins, primarily targeting wind farm aerodynamics but adaptable to other continuous physics systems. By incorporating a reduced order model, the framework aims to enable trained models to run efficiently on compact edge devices, as demonstrated through a transient heat transfer example.</p>
-                            <a href="#" class="btn btn-primary read-more">Read More</a>
+                            <a href="projects/digital_shadow.html" class="btn btn-primary read-more">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -418,7 +418,7 @@
                             <h3>Asynchronous Mesh Movement - GPU</h3>
                             <h4>Parallel Asynchronous Mesh Movement Computations for ALE-FEM in GPU</h4>
                             <p>This project optimizes mesh movement computations for Navier-Stokes solvers by leveraging GPU parallelism. We addressed two key challenges: restructuring module dependencies to enable asynchronous GPU computation, and efficiently transferring complex finite element data structures between CPU and GPU using mapped arrays. These innovations allow for seamless GPU computations without host intervention, significantly enhancing overall solver performance.</p>
-                            <a href="#" class="btn btn-primary read-more">Read More</a>
+                            <a href="projects/ale_gpu.html" class="btn btn-primary read-more">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -435,7 +435,24 @@
                             <h3>ALE-FEM for Free Surface Flows</h3>
                             <h4>Arbitrary Lagrangian Eulerian based FEM for Free Surface Flows in 3D</h4>
                             <p>Simulations of free surface flow of an incompressible fluid using ALE-FEM. The implementation is done in our in-house FEM library ParMooN.</p>
-                            <a href="#" class="btn btn-primary read-more">Read More</a>
+                            <a href="projects/ale_fem.html" class="btn btn-primary read-more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Free Surface ALE -->
+                <div class="project-card" data-tags="fem">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="image-container">
+                                <img src="images/covid.png" alt="Project Title" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <h3>Ensemble forecast of COVID-19 in Karnataka for vulnerability assessment and policy interventions</h3>
+                            <h4>Population balance model to predict the severity of Covid second wave 3</h4>
+                            <p>We present an ensemble forecast for Wave-3 of COVID-19 in the state of Karnataka, India, using the IISc Population Balance Model for infectious disease spread. The reported data of confirmed, recovered, and deceased cases in Karnataka from 1 July 2020 to 4 July 2021 is utilized to tune the model’s parameters, and an ensemble forecast is done from 5 July 2021 to 30 June 2022. The ensemble is built with 972 members by varying seven critical parameters that quantify the uncertainty in the spread dynamics (antibody waning, viral mutation) and interventions (pharmaceutical, non-pharmaceutical). The probability of Wave-3, the peak date distribution, and the peak caseload distribution are estimated from the ensemble forecast.</p>
+                            <a href="https://colab.research.google.com/github/divijghose/COVID_Wave3_IISc/blob/main/COVID_Wave3_Ensemble.ipynb" class="btn btn-primary read-more">Read More</a>
                         </div>
                     </div>
                 </div>
