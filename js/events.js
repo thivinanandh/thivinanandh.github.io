@@ -149,7 +149,7 @@ document.addEventListener('DOMContentLoaded', function() {
             title:       "Presentation: Shell.ai Scientific Conference",
             date:        "2024-09-10",
             description: "Our work on variational PINNs for wind fard modelling was presented at a poster at Shell.ai conference held at Bangalore. This work was our collaboration with Shell India Research Labs",
-            tags:        ["Publications"],
+            tags:        ["Presentations"],
             link:        "https://www.linkedin.com/posts/thivinanandh_sciml-fluiddynamics-machinelearning-activity-7239668088978186240-Us-I?utm_source=share&utm_medium=member_desktop"
         }
         // Add more events as needed
