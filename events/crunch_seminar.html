@@ -39,31 +39,13 @@
     Thivin Anandh
     </title>
     <style>
-        :root {
-            --text-color: #343a40;
-            --text-secondary-color: #6c757d;
-            --text-link-color: #007bff;
-            --background-color: #eaedf0;
-            --secondary-background-color: #64ffda1a;
-            --primary-color: #007bff;
-            --secondary-color: #f8f9fa;
-        }
+        
 
-        body {
-            font-family: 'Roboto', sans-serif;
-            font-size: 16px;
-            line-height: 1.5;
-            color: var(--text-color);
-            background-color: var(--background-color);
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
+        /* .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
-        }
+        } */
 
         h1, h2, h3, h4 {
             font-family: 'Poppins', sans-serif;
@@ -78,129 +60,7 @@
             padding-bottom: 10px;
         }
 
-        h2 {
-            font-size: 2em;
-            margin-top: 30px;
-            margin-bottom: 15px;
-            border-bottom: 2px solid var(--primary-color);
-            padding-bottom: 10px;
-        }
-
-        h3 {
-            font-size: 1.5em;
-            margin-top: 25px;
-            margin-bottom: 10px;
-        }
-
-        h4 {
-            font-size: 1.2em;
-            margin-top: 20px;
-            margin-bottom: 10px;
-        }
-
-        p {
-            margin-bottom: 15px;
-            color: var(--text-color);
-            font-size: 1rem;
-            font-family: 'Alata', sans-serif;
-            opacity: 0.8;
-        }
-
-        /* img {
-            max-width: 600px;
-            max-height: 500px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            display: block;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        } */
-
-        ul {
-            margin-bottom: 15px;
-            padding-left: 20px;
-        }
-
-        li {
-            margin-bottom: 5px;
-            color: var(--text-color);
-            font-size: 1rem;
-            font-family: 'Alata', sans-serif;
-            opacity: 0.8;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            margin-right: 10px;
-            margin-bottom: 10px;
-            background-color: var(--primary-color);
-            color: var(--secondary-color);
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-            font-family: 'Roboto', sans-serif;
-        }
-
-        .btn:hover {
-            background-color: var(--text-link-color);
-        }
-
-        /* New styles for centered images */
-        .image-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 20px;
-            max-width: 100%;
-        }
-
-        .image-container img {
-            margin-bottom: 10px;
-            max-width: 100%;    
-            /* height: auto; */
-        }
-
-        .image-container p {
-            text-align: center;
-            font-style: italic;
-            color: var(--text-secondary-color);
-        }
-
-        .journal-card {
-            display: flex  ;
-            flex-direction: column;
-            align-items: center;
-        background-color: var(--card-background);
-        border: 1px solid var(--card-border);
-        border-radius: 8px;
-        padding: 15px;
-        margin: 20px 0;
-        box-shadow: 0 2px 4px var(--card-shadow);
-        transition: all 0.3s ease;
-        background-color: var(--secondary-color);
-    }
-
-    .journal-card:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 4px 8px var(--card-shadow);
-    }
-
-    .journal-card h4 {
-        margin-top: 0;
-        margin-bottom: 10px;
-        color: var(--primary-color);
-        font-size: 1.1em;
-    }
-
-    .journal-card p {
-        margin: 0;
-        color: var(--card-text);
-        font-size: 0.9em;
-    }
-
+       
         @media (max-width: 768px) {
             .container {
                 padding: 10px;
@@ -210,19 +70,10 @@
                 font-size: 2em;
             }
 
-            h2 {
-                font-size: 1.75em;
-            }
-
-            h3 {
-                font-size: 1.25em;
-            }
-
-            h4 {
-                font-size: 1.1em;
-            }
+    
         }
     </style>
+    <link rel="stylesheet" href="css/events_pages.css">
 </head>
 <body class="light">
     <script>let localStorageValue=localStorage.getItem("pref-theme"),mediaQuery=window.matchMedia('(prefers-color-scheme: dark)').matches;switch(localStorageValue){case"dark":document.body.classList.add('dark');break;case"light":document.body.classList.remove('dark');break;default:mediaQuery&&document.body.classList.add('dark');break}</script>
@@ -275,6 +126,11 @@
                        </a>
                     </li>
                     <li class="nav-item navbar-text">
+                        <a class=nav-link href="events.html" aria-label=contact>
+                        Events
+                        </a>
+                     </li>
+                    <li class="nav-item navbar-text">
                        <a class=nav-link href=/#contact aria-label=contact>
                        Contact
                        </a>
@@ -317,16 +173,44 @@
 
 
     <div class="container">
-        <div style="width: 100%; display: flex; justify-content: flex-end">
-            <!-- add a Right aligned button -->
-            <a href="events.html" class="btn">Back to Events</a>
+        <div class="event-header">
+            <h1 class="event-title">CRUNCH Lab Seminar - FastVPINNs Presentation</h1>
+            <p class="event-date">June 21, 2024 | CRUNCH Lab, Brown University</p>
         </div>
-        
-        
-        
 
-        
+        <div class="event-content">
+            <p>I presented our work on FastVPINNs at the CRUNCH Lab seminar, following an invitation from Prof. George Karniadakis. The abstract of the talk was as follows:</p>
+
+            <!-- <div class="event-abstract"> -->
+                <h4>Abstract</h4>
+                <p>Variational Physics-Informed Neural Networks (VPINNs) solve partial differential equations (PDEs) using a variational loss function, similar to Finite Element Methods. While hp-VPINNs are generally more effective than PINNs, they are computationally intensive and do not scale well with increasing element counts. This work introduces FastVPINNs, a tensor-based framework that significantly reduces training time and handles complex geometries. Optimized tensor operations in FastVPINNs achieve up to a 100-fold reduction in median training time per epoch compared to traditional hp-VPINNs. With the right hyperparameters, FastVPINNs can outperform conventional PINNs in both speed and accuracy, particularly for problems with high-frequency solutions.</p>
+            <!-- </div> -->
+
+            <div class="event-abstract" style="box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); padding: 20px; margin-top: 20px;">
+                <p style="text-align: center; color: var(--primary-color);"><strong>A Moment of Triumph and New Beginning</strong></p>
+                <p>In an unexpected turn of events, Prof. George Karniadakis extended a postdoctoral position offer immediately following the seminar. 
+                    This remarkable gesture not only validated the significance of the work but also presented an excellent opportunity for me to work at the 
+                    highest level in the field of Scientific Machine Learning. This momentous occasion was captured in the Zoom recording and can be seen in the LinkedIn post  </p>
+                    <div style="width: 100%; display: flex;align-items: center; justify-content: center;">
+                    <a href="https://www.linkedin.com/posts/ahmadinaz_beautiful-moments-in-todays-crunch-seminar-ugcPost-7209979635684536320-2BUo" style="align-self: center ;align-items: center; padding: 10px 20px; background-color: #0077B5; color: white; text-decoration: none; border-radius: 5px; font-family: Arial, sans-serif; font-weight: bold;">Linkedin Post</a>
+                        
+                    </div>
+            </div>
+
+            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; margin: 20px 0;">
+                <div id="linkedin-embed-container" style="display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; margin: 20px 0;">
+                    <iframe id="linkedin-embed" src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7209979635684536320" height="851" width="504" frameborder="0" allowfullscreen="" title="Embedded post" style="max-width: 100%; margin-bottom: 20px;"></iframe>
+                    <a id="linkedin-fallback" href="https://www.linkedin.com/posts/ahmadinaz_beautiful-moments-in-todays-crunch-seminar-ugcPost-7209979635684536320-2BUo" target="_blank" rel="noopener noreferrer" style="display: none; padding: 10px 20px; background-color: #0077B5; color: white; text-decoration: none; border-radius: 5px; font-family: Arial, sans-serif; font-weight: bold;">View LinkedIn Post</a>
+                </div>
+                
+                <p style="text-align: center; font-family: 'Roboto', sans-serif; color: var(--text-color); margin-bottom: 10px;">The YouTube link for the Seminar is given here</p>
+                
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/YAxf4gOdehQ?si=_PijlL6wd9EeqeTn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="max-width: 100%;"></iframe>
+            </div>
+        </div>
     </div>
+
+
     <script>
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -381,6 +265,33 @@
          return new bootstrap.Tooltip(a);
      });
   </script>
+  <!-- <script src="js/events.js"></script> -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var iframe = document.getElementById('linkedin-embed');
+        var fallbackButton = document.getElementById('linkedin-fallback');
+        
+        iframe.addEventListener('load', function() {
+            // If the iframe loads successfully, hide the fallback button
+            fallbackButton.style.display = 'none';
+        });
+        
+        iframe.addEventListener('error', function() {
+            // If the iframe fails to load, hide it and show the fallback button
+            iframe.style.display = 'none';
+            fallbackButton.style.display = 'inline-block';
+        });
+        
+        // Set a timeout in case the iframe takes too long to load
+        setTimeout(function() {
+            if (iframe.contentDocument.body.children.length === 0) {
+                iframe.style.display = 'none';
+                fallbackButton.style.display = 'inline-block';
+            }
+        }, 5000); // 5 seconds timeout
+    });
+    </script>
+    
 </body>
 
 </html>

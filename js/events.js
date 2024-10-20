@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Covid Paper 
         {
             title:       "arXiV Paper: COVID-19",
-            date:        "2021-10-1",
+            date:        "2021-10-10",
             description: "Our paper titled `Ensemble Forecast of COVID-19 for Vulnerability Assessment and Policy Interventions` was made available on medarXiV",
             tags:        ["Publications"],
             link:        false
