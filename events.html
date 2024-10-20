@@ -3,7 +3,7 @@
 <head>
     <meta name=generator content="Hugo 0.92.0"><meta charset=utf-8>
     <meta name=viewport content="width=device-width,initial-scale=1">
-    <base href="../">
+    <!-- <base href="../"> -->
     <meta http-equiv=x-ua-compatible content="ie=edge">
     <meta http-equiv=accept-ch content="DPR, Viewport-Width, Width">
     <link rel=icon href=/fav.png type=image/gif>
@@ -78,129 +78,7 @@
             padding-bottom: 10px;
         }
 
-        h2 {
-            font-size: 2em;
-            margin-top: 30px;
-            margin-bottom: 15px;
-            border-bottom: 2px solid var(--primary-color);
-            padding-bottom: 10px;
-        }
-
-        h3 {
-            font-size: 1.5em;
-            margin-top: 25px;
-            margin-bottom: 10px;
-        }
-
-        h4 {
-            font-size: 1.2em;
-            margin-top: 20px;
-            margin-bottom: 10px;
-        }
-
-        p {
-            margin-bottom: 15px;
-            color: var(--text-color);
-            font-size: 1rem;
-            font-family: 'Alata', sans-serif;
-            opacity: 0.8;
-        }
-
-        /* img {
-            max-width: 600px;
-            max-height: 500px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            display: block;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        } */
-
-        ul {
-            margin-bottom: 15px;
-            padding-left: 20px;
-        }
-
-        li {
-            margin-bottom: 5px;
-            color: var(--text-color);
-            font-size: 1rem;
-            font-family: 'Alata', sans-serif;
-            opacity: 0.8;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            margin-right: 10px;
-            margin-bottom: 10px;
-            background-color: var(--primary-color);
-            color: var(--secondary-color);
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-            font-family: 'Roboto', sans-serif;
-        }
-
-        .btn:hover {
-            background-color: var(--text-link-color);
-        }
-
-        /* New styles for centered images */
-        .image-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 20px;
-            max-width: 100%;
-        }
-
-        .image-container img {
-            margin-bottom: 10px;
-            max-width: 100%;    
-            /* height: auto; */
-        }
-
-        .image-container p {
-            text-align: center;
-            font-style: italic;
-            color: var(--text-secondary-color);
-        }
-
-        .journal-card {
-            display: flex  ;
-            flex-direction: column;
-            align-items: center;
-        background-color: var(--card-background);
-        border: 1px solid var(--card-border);
-        border-radius: 8px;
-        padding: 15px;
-        margin: 20px 0;
-        box-shadow: 0 2px 4px var(--card-shadow);
-        transition: all 0.3s ease;
-        background-color: var(--secondary-color);
-    }
-
-    .journal-card:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 4px 8px var(--card-shadow);
-    }
-
-    .journal-card h4 {
-        margin-top: 0;
-        margin-bottom: 10px;
-        color: var(--primary-color);
-        font-size: 1.1em;
-    }
-
-    .journal-card p {
-        margin: 0;
-        color: var(--card-text);
-        font-size: 0.9em;
-    }
-
+       
         @media (max-width: 768px) {
             .container {
                 padding: 10px;
@@ -210,19 +88,10 @@
                 font-size: 2em;
             }
 
-            h2 {
-                font-size: 1.75em;
-            }
-
-            h3 {
-                font-size: 1.25em;
-            }
-
-            h4 {
-                font-size: 1.1em;
-            }
+    
         }
     </style>
+    <link rel="stylesheet" href="css/events.css">
 </head>
 <body class="light">
     <script>let localStorageValue=localStorage.getItem("pref-theme"),mediaQuery=window.matchMedia('(prefers-color-scheme: dark)').matches;switch(localStorageValue){case"dark":document.body.classList.add('dark');break;case"light":document.body.classList.remove('dark');break;default:mediaQuery&&document.body.classList.add('dark');break}</script>
@@ -275,7 +144,7 @@
                        </a>
                     </li>
                     <li class="nav-item navbar-text">
-                        <a class=nav-link href="events.html" aria-label=contact>
+                        <a class=nav-link href="#" aria-label=contact>
                         Events
                         </a>
                      </li>
@@ -321,61 +190,35 @@
      </header>
 
 
-    <div class="container">
-        <div style="width: 100%; display: flex; justify-content: flex-end">
-            <!-- add a Right aligned button -->
-            <a href="projects.html" class="btn">Back to Projects</a>
+     <div class="container">
+        <h1>Events</h1>
+        <div class="featured-card">
+            <h2>Featured Events</h2>
+            <div class="featured-events-list"></div>
         </div>
-        <h1 style="text-align: center;">GPU accelerated FEM based Lagrangian
-            particle tracking framework for Human air Pathway
-            </h1>
-        <!-- add a line -->
-        <div class="journal-card">
-            <h4 style="text-align: center;">Accepted: ParCFD-2024, 2024, University Club Bonn, Germany</h4>
-            <div style="display: flex; align-items: center; justify-content: center;">
-                <a href="#" class="btn">Paper</a>
-      
+        <h2>All Events</h2>
+        <div class="events-container">
+            <div class="events-list">
+                <!-- Event cards will be populated here -->
             </div>
-        </div>
-        
-        <div class="project-content">
-            
-            <!-- <a href="https://arxiv.org/pdf/2409.04143v1" class="btn">arXiv</a> -->
-            
-
-            
-            <h3>Project Abstract</h3>
-            <p>Efficient particle deposition modeling is crucial for understanding regional particle deposition effects on human airways. Lagrangian particle tracking in large, complex domains presents two primary challenges: high computational costs and the requirement for a robust framework with effective interpolation routines and comprehensive mesh information. Finite Element Method (FEM) routines, utilized for fluid modeling, are ideal due to their interpolation capabilities and data structures, which store mesh and geometric information essential for tracking and identifying particle deposition status. However, FEM data structures are complex and usually reside on CPUs, making it challenging to port them to GPUs. Despite this, GPUs offer significant parallelization potential for particle tracking if these data structures can be efficiently managed. In this work, we introduce a GPU-accelerated Lagrangian particle deposition framework utilizing FEM-based routines. Our approach focuses on efficient transfer and simplification of FEM data structures from CPU to GPU, facilitating the implementation of zonal-based particle searching and inertial deposition techniques directly on the GPU. Our model demonstrated lower sequential execution time than ANSYS Fluent's particle tracking module and achieved a 100x speedup over the Sequential CPU implementation and a 4x speedup over the OpenMP implementation for number of particles up to 5 Million. The GPU-accelerated framework reduces execution time from days to hours for complex geometries, enabling deeper exploration of particle deposition in human airways. </p>
-                            
-
-
-            <h3>Methodologies</h3>
-            
-            <div class="image-container">
-                <img src="projects/image/gpusiminhale.png" alt="Project Image 2">
-                <p> A schematic illustrating the proposed framework.</p>
+            <div class="sidebar">
+                <div class="timeline-container">
+                    <h3>Timeline</h3>
+                    <div class="timeline">
+                        <!-- Timeline will be populated by JavaScript -->
+                    </div>
+                </div>
+                <div class="tag-filter-container">
+                    <h3>Filter by Tags</h3>
+                    <div class="tag-filter">
+                        <!-- Tag filters will be populated by JavaScript -->
+                    </div>
+                </div>
             </div>
-            
-            <!-- Add a youtube video  -->
-             <h3>Results </h3>
-             <div class="image-container">
-                <img src="projects/image/gpu_siminhale2.png" alt="Project Image 2">
-                <p> GPU Speedups.</p>
-            </div>
-
-                <h3>Particle Deposition Simulation</h3>
-            <div style="display: flex; align-items: center; justify-content: center;">
-                <!-- <iframe width="560" height="315" src="https://www.youtube.com/watch?v=2c2IhLzEZ2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/2c2IhLzEZ2Y?si=xuPYP-SK1JGV_buy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-            
-        </div>
-
-        <div style="width: 100%; display: flex; justify-content: flex-end">
-            <!-- add a Right aligned button -->
-            <a href="projects.html" class="btn">Back to Projects</a>
         </div>
     </div>
+
+
     <script>
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -430,6 +273,7 @@
          return new bootstrap.Tooltip(a);
      });
   </script>
+  <script src="js/events.js"></script>
 </body>
 
 </html>

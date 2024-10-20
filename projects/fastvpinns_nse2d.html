@@ -106,7 +106,7 @@
             opacity: 0.8;
         }
 
-        img {
+        /* img {
             max-width: 600px;
             max-height: 500px;
             margin-bottom: 20px;
@@ -115,7 +115,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-        }
+        } */
 
         ul {
             margin-bottom: 15px;
@@ -147,16 +147,20 @@
             background-color: var(--text-link-color);
         }
 
-        /* New styles for centered images */
-        .image-container {
+         /* New styles for centered images */
+         .image-container {
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
             margin-bottom: 20px;
+            max-width: 100%;
         }
 
         .image-container img {
             margin-bottom: 10px;
+            max-width: 100%;    
+            /* height: auto; */
         }
 
         .image-container p {
@@ -270,6 +274,11 @@
                        </a>
                     </li>
                     <li class="nav-item navbar-text">
+                        <a class=nav-link href="events.html" aria-label=contact>
+                        Events
+                        </a>
+                     </li>
+                    <li class="nav-item navbar-text">
                        <a class=nav-link href=/#contact aria-label=contact>
                        Contact
                        </a>
@@ -303,6 +312,10 @@
 
 
     <div class="container">
+        <div style="width: 100%; display: flex; justify-content: flex-end">
+            <!-- add a Right aligned button -->
+            <a href="projects.html" class="btn">Back to Projects</a>
+        </div>
         <h1>An efficient hp-Variational PINNs framework for incompressible
             Navier-Stokes equations</h1>
         <!-- add a line -->
@@ -363,6 +376,11 @@
         
             
             
+        </div>
+
+        <div style="width: 100%; display: flex; justify-content: flex-end">
+            <!-- add a Right aligned button -->
+            <a href="projects.html" class="btn">Back to Projects</a>
         </div>
     </div>
     <script>

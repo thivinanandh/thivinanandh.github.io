@@ -275,11 +275,6 @@
                        </a>
                     </li>
                     <li class="nav-item navbar-text">
-                        <a class=nav-link href="events.html" aria-label=contact>
-                        Events
-                        </a>
-                     </li>
-                    <li class="nav-item navbar-text">
                        <a class=nav-link href=/#contact aria-label=contact>
                        Contact
                        </a>
@@ -324,57 +319,13 @@
     <div class="container">
         <div style="width: 100%; display: flex; justify-content: flex-end">
             <!-- add a Right aligned button -->
-            <a href="projects.html" class="btn">Back to Projects</a>
-        </div>
-        <h1 style="text-align: center;">GPU accelerated FEM based Lagrangian
-            particle tracking framework for Human air Pathway
-            </h1>
-        <!-- add a line -->
-        <div class="journal-card">
-            <h4 style="text-align: center;">Accepted: ParCFD-2024, 2024, University Club Bonn, Germany</h4>
-            <div style="display: flex; align-items: center; justify-content: center;">
-                <a href="#" class="btn">Paper</a>
-      
-            </div>
+            <a href="events.html" class="btn">Back to Events</a>
         </div>
         
-        <div class="project-content">
-            
-            <!-- <a href="https://arxiv.org/pdf/2409.04143v1" class="btn">arXiv</a> -->
-            
+        
+        
 
-            
-            <h3>Project Abstract</h3>
-            <p>Efficient particle deposition modeling is crucial for understanding regional particle deposition effects on human airways. Lagrangian particle tracking in large, complex domains presents two primary challenges: high computational costs and the requirement for a robust framework with effective interpolation routines and comprehensive mesh information. Finite Element Method (FEM) routines, utilized for fluid modeling, are ideal due to their interpolation capabilities and data structures, which store mesh and geometric information essential for tracking and identifying particle deposition status. However, FEM data structures are complex and usually reside on CPUs, making it challenging to port them to GPUs. Despite this, GPUs offer significant parallelization potential for particle tracking if these data structures can be efficiently managed. In this work, we introduce a GPU-accelerated Lagrangian particle deposition framework utilizing FEM-based routines. Our approach focuses on efficient transfer and simplification of FEM data structures from CPU to GPU, facilitating the implementation of zonal-based particle searching and inertial deposition techniques directly on the GPU. Our model demonstrated lower sequential execution time than ANSYS Fluent's particle tracking module and achieved a 100x speedup over the Sequential CPU implementation and a 4x speedup over the OpenMP implementation for number of particles up to 5 Million. The GPU-accelerated framework reduces execution time from days to hours for complex geometries, enabling deeper exploration of particle deposition in human airways. </p>
-                            
-
-
-            <h3>Methodologies</h3>
-            
-            <div class="image-container">
-                <img src="projects/image/gpusiminhale.png" alt="Project Image 2">
-                <p> A schematic illustrating the proposed framework.</p>
-            </div>
-            
-            <!-- Add a youtube video  -->
-             <h3>Results </h3>
-             <div class="image-container">
-                <img src="projects/image/gpu_siminhale2.png" alt="Project Image 2">
-                <p> GPU Speedups.</p>
-            </div>
-
-                <h3>Particle Deposition Simulation</h3>
-            <div style="display: flex; align-items: center; justify-content: center;">
-                <!-- <iframe width="560" height="315" src="https://www.youtube.com/watch?v=2c2IhLzEZ2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/2c2IhLzEZ2Y?si=xuPYP-SK1JGV_buy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-            
-        </div>
-
-        <div style="width: 100%; display: flex; justify-content: flex-end">
-            <!-- add a Right aligned button -->
-            <a href="projects.html" class="btn">Back to Projects</a>
-        </div>
+        
     </div>
     <script>
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {

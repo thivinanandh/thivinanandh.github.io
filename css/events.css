@@ -1,0 +1,230 @@
+/* events.css */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.featured-card {
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--primary-color);
+}
+
+.featured-card h2 {
+    color: var(--primary-color);
+    /* border-bottom: 2px solid var(--primary-color); */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.featured-events-list .event-card {
+    border: 0.3px solid var(--text-secondary-color); 
+    box-shadow: 0 4px 6px rgba(129, 129, 129, 0.1);
+    margin-bottom: 15px;
+}
+
+.featured-events-list .event-card:last-child {
+    margin-bottom: 0;
+}
+
+.events-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.events-list {
+    width: 70%;
+}
+
+.sidebar {
+    width: 25%;
+}
+
+.event-card {
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px var(--card-shadow, rgba(0, 0, 0, 0.1));
+    transition: transform 0.3s ease;
+}
+
+.event-card p {
+    color: var(--text-color);
+    font-size: 0.9em;
+    font-family: 'Poppins', sans-serif;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+}
+
+.event-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-family: 'Alata', sans-serif;
+}
+
+.event-header p {
+    color: var(--text-secondary-color);
+    font-size: 0.9em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.event-card h2 {
+    color: var(--primary-color);
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.event-date {
+    color: var(--text-secondary-color);
+    font-size: 0.9em;
+}
+
+.event-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.event-tags {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background-color: var(--secondary-background-color);
+    color: var(--text-color);
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.read-more {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+    background-color: var(--text-link-color);
+}
+
+.timeline-container, .tag-filter-container {
+    background-color: var(--secondary-color);
+    border: 1px solid var(--text-secondary-color);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.timeline-container h3, .tag-filter-container h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+    font-family: 'Alata', sans-serif;
+}
+
+.timeline {
+    max-height: 300px;
+    overflow-y: auto;
+    position: relative;
+    font-family: 'Alata', sans-serif;
+    opacity: 0.9;
+    padding: 20px 20px 20px 40px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: var(--primary-color);
+}
+
+.timeline-item {
+    margin-bottom: 20px;
+    position: relative;
+    cursor: pointer;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+    padding-left: 20px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -26px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    transition: transform 0.3s ease;
+}
+
+.timeline-item:hover {
+    color: var(--primary-color);
+}
+
+.timeline-item:hover::before {
+    transform: translateY(-50%) scale(1.2);
+}
+
+.tag-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.tag-filter-item {
+    background-color: var(--secondary-background-color);
+    color: var(--text-color);
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tag-filter-item.active {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+    .events-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        order: -1;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .events-list {
+        width: 100%;
+    }
+
+    .timeline {
+        max-height: none;
+    }
+}
