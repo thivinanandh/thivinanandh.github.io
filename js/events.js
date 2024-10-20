@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Crunch Seminar
         {
             title:       "CRUNCH Lab: Seminar (Post Doc Offer)",
-            date:        "2023-08-01",
+            date:        "2024-06-21",
             description: "Our work on FastVPINNs was invited to be presented at the CRUNCH Lab(Prof. George Karniadakis) at Brown University, USA. The presentation was well received and I was offered a Post Doc position by Prof. George Karniadakis at CRUNCH Lab",
             tags:        ["Presentations", "Featured"],
             link:        "events/crunch_seminar.html"
