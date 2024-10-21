@@ -56,12 +56,20 @@ document.addEventListener('DOMContentLoaded', function() {
             tags:        ["Publications"],
             link:        false
         },
+        // NCM Workshop on Numerical Methods for Partial Differential Equations
+        {
+            title:       "Lecture Session: NCM Workshop on Numerical Methods for Partial Differential Equations ",
+            date:        "2022-09-19",
+            description: "Handled session on implementation of Finite Element Methods for solving Partial Differential Equations at the NCM Workshop held at IISER Trivandrum",
+            tags:        ["Lectures", "Workshops"],
+            link:        false
+        },
         // Kotak Instructional School
         {
             title:       "Workshop-Kotak Instructional School",
             date:        "2023-03-23",
             description: "Was the organiser for the workshop titled `Instructional School on AI and ML for Researchers`, where we trained Faculties from various colleges in and around Bangalore on Introduction to ML. I handled sessions related to LLM assisted coding using github Copilot",
-            tags:        ["Workshops", "Organisational Activites"],
+            tags:        ["Workshops", "Organisational Activites", "Lectures"],
             link:        false
         },
         // IGCM - 2023
@@ -101,6 +109,14 @@ document.addEventListener('DOMContentLoaded', function() {
             title:       "Publication: Journal of Open Source Software",
             date:        "2023-07-30",
             description: "Paper titled `FastVPINNs: An efficient tensor-based Python library for solving partial differential equations using hp-Variational Physics Informed Neural Networks` was published in Journal of Open Source Software",
+            tags:        ["Publications"],
+            link:        "projects/fastvpinns.html"
+        },
+         // Publications Paper
+         {
+            title:       "Conference: Latest Advances in Computational and Applied Mathematics",
+            date:        "2024-02-22",
+            description: "Paper titled `GPU accelerated lagrangian particle tracking framework for human air pathway` was accepted for publication at LACAM-2024, held at IISER TVM",
             tags:        ["Publications"],
             link:        "projects/fastvpinns.html"
         },

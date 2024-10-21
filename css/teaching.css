@@ -1,0 +1,339 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Top buttons  */
+.top-buttons {
+    /* background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer; */
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    font-family: 'popins', sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-color);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-size: 1.2em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+    color: var(--text-color);
+    font-size: 1rem;
+    font-family: 'Alata', sans-serif;
+    opacity: 0.8;
+}
+
+/* teaching.css */
+.teaching-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.teaching-list {
+    width: 75%;
+}
+
+.sidebar {
+    width: 20%;
+}
+
+.course-card {
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px var(--card-shadow, rgba(0, 0, 0, 0.1));
+}
+
+.course-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.course-title-section {
+    width: 80%;
+}
+
+.course-title {
+    font-size: 1.5em;
+    margin: 0 0 5px 0;
+    color: var(--primary-color);
+}
+
+.course-subtitle {
+    font-size: 1em;
+    color: var(--text-secondary-color);
+    margin: 0;
+}
+
+.course-date {
+    width: 15%;
+    text-align: center;
+    font-size: 1em;
+    color: var(--primary-color);
+    font-family: "Roboto", sans-serif;
+    border: 2px solid var(--text-color) 0.5;
+    background-color: var(--secondary-color);
+
+}
+
+.course-description-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.course-description {
+    width: 80%;
+}
+
+.feedback-circle {
+    width: 20%;
+    text-align: center;
+}
+
+.circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 5px solid var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 5px;
+}
+
+.feedback-score {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--primary-color);
+    display: none;
+}
+
+.score-text {
+    font-size: 1.1em;
+    color: var(--primary-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+.feedback-toggle {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.feedback-section {
+    display: none;
+    margin-top: 15px;
+    position: relative;
+}
+
+.feedback-section svg:nth-child(1)  {
+    margin-left: 20px;
+    size: 30px;
+    margin-top: -5px;
+}
+
+.feedback-feedback-carousel svg:nth-child(1) {
+    margin-right: 20px;
+    size: 30px;
+    margin-top: -5px;
+}
+
+.feedback-carousel {
+    overflow: hidden;
+    width: 80%;
+}
+
+.feedback-card {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--secondary-background-color);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+}
+
+.feedback-text {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.feedback-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    width: 80%;
+}
+
+.feedback-nav-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--text-secondary-color);
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.feedback-nav-dot.active {
+    background-color: var(--primary-color);
+}
+
+.feedback-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.feedback-arrow.left {
+    left: -35px;
+    top: 37px;
+    display: none;
+}
+
+.feedback-arrow.right {
+    right: 151px;
+    top: +37px;
+    display: none;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 20px;
+    font-family: 'Popins', sans-serif;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: var(--primary-color);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -24px;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.star-rating {
+    width: 20%;
+    text-align: center;
+}
+
+.stars {
+    font-size: 24px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.star-wrapper {
+    display: inline-block;
+    position: relative;
+}
+
+.star {
+    display: inline-block;
+}
+
+.star-background {
+    color: #ddd; /* Color for empty stars */
+}
+
+.star-foreground {
+    color: #ffd700; /* Color for filled stars (gold) */
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 0; /* This will be set dynamically in JavaScript */
+}
+
+.score-text {
+    font-size: 0.9em;
+    color: var(--text-secondary-color);
+}
+
+@media (max-width: 768px) {
+    .teaching-container {
+        flex-direction: column-reverse;
+    }
+
+    .teaching-list, .sidebar {
+        width: 100%;
+    }
+
+    .sidebar {
+        margin-bottom: 20px;
+    }
+}
