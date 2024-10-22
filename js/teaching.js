@@ -324,7 +324,9 @@ document.addEventListener('DOMContentLoaded', function() {
             timelineItem.textContent = year;
             timelineItem.addEventListener('click', () => {
                 const yearCourses = courses.filter(course => new Date(course.date).getFullYear() === year);
+                console.log(yearCourses);
                 if (yearCourses.length > 0) {
+                    // console.log("Holaaa", yearCourses[0][0].element);
                     yearCourses[0].element.scrollIntoView({ behavior: 'smooth' });
                 }
             });

@@ -56,7 +56,8 @@
 .event-card p {
     color: var(--text-color);
     font-size: 0.9em;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Alata', sans-serif;
+    opacity: 0.9;
 }
 
 .event-card:hover {
