@@ -62,7 +62,7 @@
 
         body {
             font-family: 'Roboto', sans-serif;
-            font-size: 16px;
+            font-size: 1rem;
             line-height: 1.5;
             color: var(--text-color);
             background-color: var(--background-color);
@@ -71,237 +71,97 @@
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 900px;
             margin: 0 auto;
             padding: 20px;
         }
 
-        h1, h2, h3, h4 {
+        h1 {
             font-family: 'Poppins', sans-serif;
             color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
         }
 
-        h1 {
-            font-size: 2.5em;
+        h4{
+            font-family: 'poppins', sans-serif;
+            font-size: 1.1rem;
+            margin-top: 15px;
             margin-bottom: 20px;
-            margin-top: 30px;
-            border-bottom: 2px solid var(--primary-color);
-            padding-bottom: 10px;
         }
 
-        h2 {
-            font-size: 2em;
-            margin-top: 30px;
+        .section {
+            background-color: var(--secondary-color);
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px var(--text-secondary-color);
+        }
+
+        .section-title {
+            font-family: 'Poppins', sans-serif;
+            color: var(--primary-color);
+            font-size: 1.5rem;
             margin-bottom: 15px;
-            border-bottom: 2px solid var(--primary-color);
             padding-bottom: 10px;
+            border-bottom: 1px solid var(--text-secondary-color);
         }
 
-        h3 {
-            font-size: 1.5em;
-            margin-top: 25px;
-            margin-bottom: 10px;
-        }
-
-        h4 {
-            font-size: 1.2em;
-            margin-top: 20px;
-            margin-bottom: 10px;
-        }
-
-        p {
-            margin-bottom: 15px;
+        .subsection-title {
+            font-family: 'Poppins', sans-serif;
             color: var(--text-color);
-            font-size: 1rem;
-            font-family: 'Alata', sans-serif;
-            opacity: 0.8;
+            font-size: 1.2rem;
+            margin: 15px 0;
+            padding-top: 15px;
+            border-top: 1px solid var(--secondary-background-color);
         }
 
-        /* img {
-            max-width: 600px;
-            max-height: 500px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            display: block;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        } */
-
-        ul {
+        .link-item {
             margin-bottom: 15px;
             padding-left: 20px;
+            border-left: 3px solid var(--secondary-background-color);
+            font-family: "Alata", sans-serif;
         }
 
-        li {
-            margin-bottom: 5px;
-            color: var(--text-color);
-            font-size: 1rem;
-            font-family: 'Alata', sans-serif;
-            opacity: 0.8;
+        .link-item:hover {
+            border-left-color: var(--primary-color);
         }
 
-        .btn {
-            display: inline-block;
-            /* padding: 10px 20px; */
-            margin-right: 10px;
-            margin-bottom: 10px;
-            background-color: var(--primary-color);
-            color: var(--secondary-color);
+        .link-item a {
+            color: var(--text-link-color);
             text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
         }
 
-        .btn:hover {
-            background-color: var(--text-link-color);
+        .link-item a:hover {
+            text-decoration: underline;
         }
 
-        /* New styles for centered images */
-         /* New styles for centered images */
-         .image-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 20px;
-            max-width: 100%;
-        }
-
-        .image-container img {
-            margin-bottom: 10px;
-            max-width: 100%;    
-            /* height: auto; */
-        }
-
-        .image-container p {
-            text-align: center;
-            font-style: italic;
+        .channel-name {
             color: var(--text-secondary-color);
+            font-style: italic;
+            margin-left: 5px;
         }
 
-        .journal-card {
-            display: flex  ;
-            flex-direction: column;
-            align-items: center;
-        background-color: var(--card-background);
-        border: 1px solid var(--card-border);
-        border-radius: 8px;
-        padding: 15px;
-        margin: 20px 0;
-        box-shadow: 0 2px 4px var(--card-shadow);
-        transition: all 0.3s ease;
-        background-color: var(--secondary-color);
-    }
-
-    .journal-card:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 4px 8px var(--card-shadow);
-    }
-
-    .journal-card h4 {
-        margin-top: 0;
-        margin-bottom: 10px;
-        color: var(--primary-color);
-        font-size: 1.1em;
-    }
-
-    .journal-card p {
-        margin: 0;
-        color: var(--card-text);
-        font-size: 0.9em;
-    }
-    .row {
-            display: flex;
-            flex-wrap: wrap;
-            margin: -10px;
+        .tag {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 3px;
+            font-size: 0.8rem;
+            margin-left: 5px;
+            color: var(--secondary-color);
+            background-color: var(--primary-color);
         }
 
-        .column {
-            flex: 1;
-            padding: 10px;
-            min-width: 300px;
+        .description {
+            margin-top: 5px;
+            color: var(--text-secondary-color);
+            font-size: 0.9rem;
         }
 
-        video {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
-        .simulation-card {
-        background-color: var(--secondary-color);
-        border-radius: 8px;
-        box-shadow: 0 2px 4px var(--card-shadow, rgba(0, 0, 0, 0.1));
-        padding: 20px;
-        margin-bottom: 20px;
-    }
-
-    .simulation-card table {
-        width: 100%;
-        border-collapse: collapse;
-    }
-
-    .simulation-card th {
-        text-align: left;
-        padding: 10px;
-        border-bottom: 1px solid var(--text-secondary-color);
-        color: var(--primary-color);
-        font-family: 'Poppins', sans-serif;
-        font-weight: bold;
-    }
-
-    .simulation-card td {
-        padding: 10px;
-        border-bottom: 1px solid var(--text-secondary-color);
-        color: var(--text-color);
-        font-family: 'Alata', sans-serif;
-    }
-
-    .simulation-card tr:last-child td {
-        border-bottom: none;
-    }
-
-    .simulation-card .btn {
-        display: inline-block;
-        padding: 5px 10px;
-        background-color: var(--primary-color);
-        color: var(--secondary-color);
-        text-decoration: none;
-        border-radius: 5px;
-        transition: background-color 0.3s ease;
-        font-family: 'Roboto', sans-serif;
-        font-size: 0.9em;
-    }
-
-    .simulation-card .btn:hover {
-        background-color: var(--text-link-color);
-    }
-
-
-        @media (max-width: 768px) {
-            .column {
-                flex: 100%;
-            }
-            .container {
-                padding: 10px;
-            }
-
-            h1 {
-                font-size: 2em;
-            }
-
-            h2 {
-                font-size: 1.75em;
-            }
-
-            h3 {
-                font-size: 1.25em;
-            }
-
-            h4 {
-                font-size: 1.1em;
-            }
+        .icon {
+            margin-right: 8px;
+            color: var(--primary-color);
         }
     </style>
 </head>
@@ -396,11 +256,190 @@
         </nav>
      </header>
 
-     <div class="container">
-        <h3 class="text-center">Useful Links</h3>
-        <h4 class="text-center">Here are some useful links that I have found helpful in my research and teaching.</h4>
-     </div>
      
+     <div class="container">
+        <h1>Useful Learning Resources</h1>
+        <h4 class="text-center">Here are some useful links that I have found helpful in my research and teaching.</h4>
+
+        <div class="section">
+            <div class="section-title">C++</div>
+            <div class="link-item">
+                <i class="fab fa-youtube icon"></i>
+                <a href="https://www.youtube.com/watch?v=h-HBipu_1P0&list=PL-fDNXex3rAb850huKS5WP6e8JsCJjYlW">Understanding Pointers in C++</a>
+                <span class="channel-name">(MycodeSchool)</span>
+                <div class="description">Excellent playlist on understanding Pointers in C++ (The author has good playlist on understanding DSA)</div>
+            </div>
+            <div class="link-item">
+                <i class="fab fa-youtube icon"></i>
+                <a href="https://www.youtube.com/@TheCherno">The Cherno Channel</a>
+                <span class="channel-name">(The Cherno)</span>
+                <div class="description">A very good channel to get familiarised understanding C++ Syntaxes.</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">FEM (Finite Element Methods)</div>
+            <div class="link-item">
+                <i class="fab fa-youtube icon"></i>
+                <a href="https://www.youtube.com/watch?v=U65GK1vVw4o&list=PLJhG_d-Sp_JHKVRhfTgDqbic_4MHpltXZ">FEM Course</a>
+                <span class="channel-name">(openmichigan)</span>
+                <!-- <span class="tag"><i class="fas fa-video"></i> YouTube</span> -->
+                <div class="description">A very good introductory course on Finite Element methods by Prof.Krishna Garikapathi. Covers both theoretical and practical aspects.</div>
+            </div>
+            <div class="link-item">
+                <i class="fas fa-file-pdf icon"></i>
+                <a href="https://mecheng.iisc.ac.in/csjog/me257Notes/fem.pdf">FEM Mathematics Guide</a>
+                <!-- <span class="tag"><i class="fas fa-file-pdf"></i> PDF</span> -->
+                <div class="description">An excellent material for understanding the Math and Matrices behind Finite Element Methods by Prof. CS Jog at IISc</div>
+            </div>
+            <div class="link-item">
+                <i class="fas fa-book icon"></i>
+                <a href="https://www.amazon.in/FINITE-ELEMENTS-ALGORITHMS-Sashikumaar-Ganesan/dp/1108415709">FEM Algorithms: Implementation Perspective</a>
+                <!-- <span class="tag"><i class="fas fa-book"></i> Book</span> -->
+                <div class="description">Chapter-9: Great material on Object Oriented Implementation of Finite Element Softwares by Prof. Sashi</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Numerical Methods</div>
+            <div class="link-item">
+                <i class="fab fa-youtube icon"></i>
+                <a href="https://www.youtube.com/watch?v=CS3WeZ7dedw&list=PLlXfTHzgMRUK56vbQgzCVM9vxjKxc8DCr">Linear Algebra and PDEs</a>
+                <span class="channel-name">(MathTheBeautiful)</span>
+                <!-- <span class="tag"><i class="fas fa-video"></i> YouTube</span> -->
+                <div class="description">The author is PhD Student of Gilbert Strang. Has very good lectures on intersection of Linear Algebra and its association with numerically solving PDE's</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Scientific Machine Learning</div>
+            <div class="link-item">
+                <i class="fab fa-youtube icon"></i>
+                <a href="https://www.youtube.com/watch?v=c5JnHxQwcs0&t=11s&pp=ygUYZ2VvcmdlIGthcm5pYWRha2lzIHBpbm5z">DeepONets</a>
+                <span class="channel-name">(JHU)</span>
+                <!-- <span class="tag"><i class="fas fa-video"></i> YouTube</span> -->
+                <div class="description">Presentation on Neural Operators(DeepONets) by Prof. George Karniadakis</div>
+            </div>
+            
+            <div class="link-item">
+                <i class="fab fa-youtube icon"></i>
+                <a href="https://sites.brown.edu/crunch-group/weekly-seminar-spotlight/">Crunch Group Seminars</a>
+                <span class="channel-name">(Crunch-Group)</span>
+                <!-- <span class="tag"><i class="fas fa-video"></i> YouTube</span> -->
+                <div class="description">A series of weekly seminars on latest advances in Scientific Machine Learning.</div>
+            </div>
+
+            <div class="link-item">
+                <i class="fab fa-youtube icon"></i>
+                <a href="https://www.youtube.com/watch?v=LkKvhvsf6jY&list=PLJkYEExhe7rYFkBIB2U5pf_RWzYnFLj7r">SciML Lectures</a>
+                <span class="channel-name">(CAMLab, ETH Zurich)</span>
+                <!-- <span class="tag"><i class="fas fa-video"></i> YouTube</span> -->
+                <div class="description">Lectures on SciML concepts such as PINNs, Neural Operators, Symbolic Regression etc offered at ETH Zurich by Dr. Ben Moseley and Prof. Siddhartha Mishra</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Machine Learning</div>
+            
+            <div class="subsection-title">Math in ML</div>
+            <div class="link-item">
+                <i class="fas fa-file-pdf icon"></i>
+                <a href="https://mml-book.github.io/book/mml-book.pdf">Mathematics for Machine Learning</a>
+                <!-- <span class="tag"><i class="fas fa-file-pdf"></i> PDF</span> -->
+                <div class="description">Great book on understanding the mathematics behind ML Algorithms</div>
+            </div>
+            <div class="link-item">
+                <i class="fab fa-youtube icon"></i>
+                <a href="https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi">Neural Networks Visual Guide</a>
+                <span class="channel-name">(3Blue1Brown)</span>
+                <!-- <span class="tag"><i class="fas fa-video"></i> YouTube</span> -->
+                <div class="description">Visual explanation of Neural Networks and Transformer Architectures</div>
+            </div>
+            <div class="link-item">
+                <i class="fab fa-youtube icon"></i>
+                <a href="https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab">Linear Algebra Essentials</a>
+                <span class="channel-name">(3Blue1Brown)</span>
+                <!-- <span class="tag"><i class="fas fa-video"></i> YouTube</span> -->
+                <div class="description">Visual explanation of Linear Algebra concepts</div>
+            </div>
+
+            <div class="subsection-title">ML Algorithms</div>
+            <div class="link-item">
+                <i class="fab fa-youtube icon"></i>
+                <a href="https://www.youtube.com/@statquest">StatQuest</a>
+                <span class="channel-name">(Statquest)</span>
+                <!-- <span class="tag"><i class="fas fa-video"></i> YouTube</span> -->
+                <div class="description">Excellent channel explaining all ML Algorithms (Good for revision)</div>
+            </div>
+            
+
+            <div class="subsection-title">ML Libraries</div>
+            <div class="link-item">
+                <i class="fab fa-github icon"></i>
+                <a href="https://github.com/mrdbourke/tensorflow-deep-learning">Tensorflow-Tutorials</a>
+                <span class="channel-name">(mrdbourke)</span>
+                <!-- <span class="tag"><i class="fas fa-video"></i> YouTube</span> -->
+                <div class="description">Excellent collection of notebooks for learning tensorflow. Good learning material for the Google's Tensorflow developer certification</div>
+            </div>
+
+            <div class="subsection-title">ML Projects & Coding</div>
+            <div class="link-item">
+                <i class="fab fa-github icon"></i>
+                <a href="https://github.com/ashishpatel26/500-AI-Machine-learning-Deep-learning-Computer-vision-NLP-Projects-with-code">500 ML/DL Projects</a>
+                <!-- <span class="tag"><i class="fab fa-github"></i> GitHub</span> -->
+                <div class="description">A collection of ML & DL Projects</div>
+            </div>
+
+            <div class="subsection-title">MLOps</div>
+            <div class="link-item">
+                <i class="fab fa-youtube icon"></i>
+                <a href="https://www.youtube.com/watch?v=kLKBcPonMYw">Data Version Control</a>
+                <span class="channel-name">(DVCorg)</span>
+                <!-- <span class="tag"><i class="fas fa-video"></i> YouTube</span> -->
+                <div class="description">Explaining Data version control</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Other Coding</div>
+            <div class="link-item">
+                <i class="fab fa-youtube icon"></i>
+                <a href="https://www.youtube.com/@TheCodingTrain">The Coding Train</a>
+                <span class="channel-name">(TheCodingTrain)</span>
+                <!-- <span class="tag"><i class="fas fa-video"></i> YouTube</span> -->
+                <div class="description">Excellent resource on coding physics based animations. Also Refer to "The Nature of Code"</div>
+            </div>
+            <div class="link-item">
+                <i class="fab fa-youtube icon"></i>
+                <a href="https://www.youtube.com/@kevinfaang">Kevin Fang</a>
+                <span class="channel-name">(Kevin Fang)</span>
+                <!-- <span class="tag"><i class="fas fa-video"></i> YouTube</span> -->
+                <div class="description">A great analysis on production level bugs</div>
+            </div>
+            <div class="link-item">
+                <i class="fab fa-youtube icon"></i>
+                <a href="https://www.youtube.com/@standupmaths">Stand-up Maths</a>
+                <span class="channel-name">(standupmath)</span>
+                <!-- <span class="tag"><i class="fas fa-video"></i> YouTube</span> -->
+                <div class="description">A casual study on random math problems in real life. Matt Parker is one of my Favourite Authors. His book "Humble Pi", A book about what happens wrong when math goes wrong in real life is must read. If you are not patient to read, watch this <a href="https://www.youtube.com/watch?v=34detVy-Hiw&t=2867s&pp=ygUSbWF0dCBwYXJrZXIgZ29vZ2xl" >video</a>. It has a short summary of what is discussed in the book.</div>
+            </div>
+            <div class="link-item">
+                <i class="fab fa-youtube icon"></i>
+                <a href="https://www.youtube.com/@Fireship">Fireship</a>
+                <span class="channel-name">(Fireship)</span>
+                <!-- <span class="tag"><i class="fas fa-video"></i> YouTube</span> -->
+                <div class="description">Good channel for getting tech updates</div>
+            </div>
+            <div class="link-item">
+                <i class="fab fa-youtube icon"></i>
+                <a href="https://www.youtube.com/@PracticalEngineeringChannel">Practical Engineering</a>
+                <span class="channel-name">(Practical Engineering)</span>
+                <!-- <span class="tag"><i class="fas fa-video"></i> YouTube</span> -->
+                <div class="description">Visual demonstration of Fluid Mechanics principles</div>
+            </div>
+        </div>
+    </div>
+
  
 
     <script>
