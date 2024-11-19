@@ -423,7 +423,21 @@ header .navbar.animate {
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
-    margin-top: 2rem;
+    margin-top: 0.5rem !important;
+    /* border: 2px solid var(--text-secondary-color); */
+    /* padding: 20px; */
+    /* background-color: var(--secondary-color); */
+    margin-bottom: 2rem;
+    /* width: 100%; */
+}
+
+#about .container .nav-title{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size:2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem !important;
+
 }
 
 #about .section-buttons a {
@@ -438,6 +452,7 @@ header .navbar.animate {
     font-family: 'Poppins', sans-serif;
     opacity: 1;
     color: var(--text-color) !important;
+    background-color: var(--secondary-color);
     opacity: 0.8;
 }
 

@@ -143,7 +143,7 @@
 
         .btn {
             display: inline-block;
-            /* padding: 10px 20px; */
+            padding: 10px 20px;
             margin-right: 10px;
             margin-bottom: 10px;
             background-color: var(--primary-color);
@@ -179,7 +179,6 @@
             font-style: italic;
             color: var(--text-secondary-color);
         }
-
         .journal-card {
             display: flex  ;
             flex-direction: column;
@@ -211,7 +210,6 @@
         color: var(--card-text);
         font-size: 0.9em;
     }
-
 
         @media (max-width: 768px) {
             .container {
@@ -245,7 +243,11 @@ if (localStorageValue === "dark") {
     document.body.classList.remove('dark');
     localStorage.setItem("pref-theme", 'light');
 }
-</script>    <script>var prevScrollPos=window.pageYOffset;window.addEventListener("scroll",function(){let c=document.getElementById("profileHeader"),a=window.pageYOffset,b=!1,d=!0,e=d?prevScrollPos>a:a>0;e?c.classList.add("showHeaderOnTop"):b=!0,a===0&&(b=!0),b&&c.classList.remove("showHeaderOnTop"),prevScrollPos=a})</script>
+</script>    
+<script>var prevScrollPos=window.pageYOffset;window.addEventListener("scroll",function(){let c=document.getElementById("profileHeader"),a=window.pageYOffset,b=!1,d=!0,e=d?prevScrollPos>a:a>0;e?c.classList.add("showHeaderOnTop"):b=!0,a===0&&(b=!0),b&&c.classList.remove("showHeaderOnTop"),prevScrollPos=a})</script>
+<!-- Adding Latex -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <header id=profileHeader>
         <nav class="pt-3 navbar navbar-expand-lg animate">
            <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
@@ -336,53 +338,112 @@ if (localStorageValue === "dark") {
             <!-- add a Right aligned button -->
             <a href="projects.html" class="btn">Back to Projects</a>
         </div>
-        <h1>FastVPINNs: An efficient tensor-based Python library for solving partial differential equations using hp-Variational Physics Informed Neural Networks</h1>
+        <h1>An efficient hp-Variational PINNs framework for incompressible
+            Navier-Stokes equations</h1>
         <!-- add a line -->
+
         <div class="journal-card">
-            <h4 style="text-align: center;">Published in: Journal of Open Source Software - 2024</h4>
+            <h4 style="text-align: center;">PrePrint Available. (Under Review)</h4>
             <div style="display: flex; align-items: center; justify-content: center;">
-                <a href="https://joss.theoj.org/papers/10.21105/joss.06764" class="btn">Paper</a>
-            <a href="https://github.com/cmgcds/fastvpinns" class="btn">Code</a>
+                <a href="https://cmgcds.github.io/fastvpinns" class="btn">Github</a>
+                <a href="https://arxiv.org/abs/2411.09329" class="btn">arXiv</a>
             </div>
         </div>
         
         <div class="project-content">
-            
-            
-            
 
-            
-            <h3>Statement of Need</h3>
-            <p>The existing implementation of hp-VPINNs framework (Kharazmi, 2023) suffers from two major
-                challenges. One is the inabilty of the framework to handle complex geometries and the other
-                is the increased training time associated with the increase in number of elements within the
-                domain. In the work Anandh et al. (2024), we presented FastVPINNs, which addresses both
-                of these challenges. FastVPINNs handles complex geometries by using bilinear transformation,
-                and it uses a tensor-based loss computation to reduce the dependency of training time on
-                number of elements. The current implementation of FastVPINNs can acheive an speed-up of
-                up to 100 times when compared with the existing implementation of hp-VPINNs. We have also
-                shown that with proper hyperparameter selection, FastVPINNs can outperform PINNs both in
-                terms of accuracy and training time, especially for problems with high frequency solutions.
-                In this work, we present the Python based implementation of the novel FastVPINNs framework
-                which is built using TensorFlow-v2.0 (Abadi et al., 2015). FastVPINNs provides an elegant
-                API for users to solve both forward and inverse problems for PDEs like the Poisson, Helmholtz,
-                and Convection-Diffusion equations. With the current level of API abstraction, users should
-                be able to solve PDEs with less than six API calls as shown in the minimal working example
-                section. The framework is well-documented with examples, which can enable users to get
-                started with the framework with ease. The ability of the framework to allow users to train a hp-VPINNs to solve a PDE both faster
-                and with minimal code, can result in widespread application of this method on several real-world
-                problems, which often require complex geometries with a large number of elements within the
-                domain. </p>
-                           
+            <h3>Project Abstract</h3>
+            <p>This paper proposes and studies two extensions of applying hp-variational physics-informed
+                neural networks, more precisely the FastVPINNs framework, to convection-dominated
+                convection-diffusion-reaction problems. First, a term in the spirit of a SUPG stabilization is included in the loss functional and a network architecture is proposed that predicts
+                spatially varying stabilization parameters. Having observed that the selection of the indicator function in hard-constrained Dirichlet boundary conditions has a big impact on the
+                accuracy of the computed solutions, the second novelty is the proposal of a network architecture that learns good parameters for a class of indicator functions. Numerical studies
+                show that both proposals lead to noticeably more accurate results than approaches that
+                can be found in the literature. </p>
+                            <h3>Key Features</h3>
+            <ul>
+                <li> Loss functional with SUPG stabilisation works better for perturbed problems than other loss functionals.</li>
+                <li>The Spatialy varying Tau Predicted from Neural Network improves accuracy than using the constant stabilization parameter.</li>
+                <li>The adaptive Indicator function improves the accuracy of boundary layer problems.</li>
+            </ul>
 
 
-            <h3>Modules</h3>
+            <h3>Loss Functionals</h3>
+            <p>The below are the two different loss functionals that we have used for solving SPPDEs.</p>
+
+            <h5>SUPG Loss Functional</h5>
             
+            <p>The SUPG finite element method adds an additional term to the standard Galerkin finite element discretization. This term essentially introduces numerical diffusion in streamline direction. The global SUPG stabilization term has the form </p>
+            $$
+                \begin{equation}
+                \mathcal{L_{SUPG}} = \int_{\Omega} \tau(\mathbf{x})\left(\mathbf{b}\cdot\nabla u(\mathbf{x}) + cu(\mathbf{x})-f(\mathbf{x})\right)\left(\mathbf{b}\cdot\nabla v(\mathbf{x})\right)\ \mathrm{d}\mathbf{x}
+                \end{equation}
+            $$
+            <p>where \(\tau(\mathbf{x})\) is called stabilization parameter and the diffusive term is neglected in the residual (the first factor), which is appropriate in the convection-dominated regime.  In the framework of neural networks, the SUPG stabilization loss functional is given by </p>
+           
+            $$
+            \begin{equation}
+                \mathcal{L^{SUPG}_\tau} = \mathcal{L}^{\text{hard}}_{\text{var}} + \mathcal{L_{SUPG}}
+            \end{equation}  
+            $$
+            <p>where \(\mathcal{L}^{\text{hard}}_{\text{var}}\) is the variational loss of the PDE</p>
+            
+            <h5>Regularisation-based loss Functional</h5>
+
+            <p>The training of a neural network requires the solution of a large-scale non-convex optimization 
+            problem. For such problems, usually a regularization term is included in the loss functional. 
+            In addition, this term might counteract overfitting and thus it enhances the generalization capacity of the network.  
+            A standard approach consists in adding a \(L^2\)-type regularization, so that the loss functional becomes </p>
+            $$
+            \begin{equation}
+                \mathcal{L}_{\lambda}^{\text{reg}} = \mathcal{L}^{\text{hard}}_{\text{var}} + \frac{\lambda}{N}\sum_jw_j^2
+            \end{equation}
+            $$
+            <p>where \(N\) is the total number of entries in the weight matrices of the network
+            and \(\{w_j\}_{j=1}^N\) is the set of all weights in the network. The \(L^2\) weight decay regularization parameter \(\lambda\) needs to be tuned. </p>
+
+            <h3>Intial Results</h3>
+            <p>On Initial experimentation, we observed that the SUPG stabilization works better with SUPG Stabilisation</p>
+            <!-- TABLE -->
+            
+            <table style="margin: auto; border-collapse: collapse;width: 80%;">
+                <!-- <caption>Problem \(\text{P}_{\text{para}}\), results for using constant parameters in the SUPG loss or regularization loss</caption> -->
+                <thead>
+                    <tr>
+                        <th style="border: 1px solid black; padding: 8px;">loss</th>
+                        <th style="border: 1px solid black; padding: 8px;">search range</th>
+                        <th style="border: 1px solid black; padding: 8px;">optimal value</th>
+                        <th style="border: 1px solid black; padding: 8px;">\(L^2_{\text{err}}\)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="border: 1px solid black; padding: 8px;">\(\mathcal{L}_{\lambda}^{\text{reg}}\)</td>
+                        <td style="border: 1px solid black; padding: 8px;">\([10^{-8}, 10^{-2}]\)</td>
+                        <td style="border: 1px solid black; padding: 8px;">\(4 \cdot 10^{-6}\) \((\lambda)\)</td>
+                        <td style="border: 1px solid black; padding: 8px;">\(4.888 \cdot 10^{-1}\)</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid black; padding: 8px;">\(\mathcal{L^{SUPG}_\tau}\)</td>
+                        <td style="border: 1px solid black; padding: 8px;">\([10^{-5}, 5]\)</td>
+                        <td style="border: 1px solid black; padding: 8px;">\(1.2\) \((\tau)\)</td>
+                        <td style="border: 1px solid black; padding: 8px;"><strong>\(5.384 \cdot 10^{-2}\)</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- table captiono -->
+            <p style="text-align: center;">Problem \(P_{para}\), results for using constant parameters in the SUPG loss or regularization loss</p>
+
             <div class="image-container">
-                <img src="projects/image/joss1.png" alt="Project Image 2">
-                <p>FastVPINNs Modules</p>
+                
             </div>
 
+            <h3>Results - Spatially varying Tau</h3>
+
+            <p> We proposed a novel NN architecture that outputs both the solution and the stabilization parameter at each location. We observed that these networks perform better than those using a constant stabilization parameter throughout the domain.</p>
+
+
+            
             
         </div>
 

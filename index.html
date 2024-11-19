@@ -49,8 +49,15 @@
     </title>
 </head>
 <body class=light>
-    <script>let localStorageValue=localStorage.getItem("pref-theme"),mediaQuery=window.matchMedia('(prefers-color-scheme: dark)').matches;switch(localStorageValue){case"dark":document.body.classList.add('dark');break;case"light":document.body.classList.remove('dark');break;default:mediaQuery&&document.body.classList.add('dark');break}</script>
-    <script>var prevScrollPos=window.pageYOffset;window.addEventListener("scroll",function(){let c=document.getElementById("profileHeader"),a=window.pageYOffset,b=!1,d=!0,e=d?prevScrollPos>a:a>0;e?c.classList.add("showHeaderOnTop"):b=!0,a===0&&(b=!0),b&&c.classList.remove("showHeaderOnTop"),prevScrollPos=a})</script>
+<script>
+let localStorageValue = localStorage.getItem("pref-theme");
+if (localStorageValue === "dark") {
+    document.body.classList.add('dark');
+} else {
+    document.body.classList.remove('dark');
+    localStorage.setItem("pref-theme", 'light');
+}
+</script>    <script>var prevScrollPos=window.pageYOffset;window.addEventListener("scroll",function(){let c=document.getElementById("profileHeader"),a=window.pageYOffset,b=!1,d=!0,e=d?prevScrollPos>a:a>0;e?c.classList.add("showHeaderOnTop"):b=!0,a===0&&(b=!0),b&&c.classList.remove("showHeaderOnTop"),prevScrollPos=a})</script>
     <header id=profileHeader>
        <nav class="pt-3 navbar navbar-expand-lg animate">
           <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
@@ -74,20 +81,16 @@
                       </div>
                    </li>
                    <li class="nav-item navbar-text">
-                      <a class=nav-link href=/#about aria-label=about>
-                      About Me
-                      </a>
-                   </li>
+                     <a class=nav-link href=/#education aria-label=education>
+                     Education
+                     </a>
+                  </li>
                    <li class="nav-item navbar-text">
                       <a class=nav-link href=/#publications_section aria-label=experience>
                       Publications
                       </a>
                    </li>
-                   <li class="nav-item navbar-text">
-                      <a class=nav-link href=/#education aria-label=education>
-                      Education
-                      </a>
-                   </li>
+                   
                    <li class="nav-item navbar-text">
                      <a class=nav-link href="/teaching.html" aria-label=education>
                      Teaching
@@ -173,7 +176,7 @@
                     SciML | MLOps | CFD | FEM | HPC
                    </h4>
                    <p class=hero-content>
-                     A passionate researcher working on Scientific Machine Learning and High Performance Computing for fluid flow problems. I'm excited to develop and deploy efficient algorithms for fluid dynamics problems using modern ML techniques.
+                     A passionate researcher working on Scientific Machine Learning and High Performance Computing for fluid flow problems. I'm excited to develop and deploy efficient and scalable algorithms for fluid dynamics problems using modern ML and HPC techniques.
                    </p>
                    <div class=row>
                       <div class="col-auto h-100">
@@ -372,6 +375,18 @@
        <!-- ABOUT ME -->
        <section id="about" class="py-2">
          <div class="container">
+            <div class="nav-title" >Quick Links</div>
+            <div class="section-buttons mt-5">
+               <a href="#education"><i class="fas fa-graduation-cap" style="margin-right: 10px;"></i> Education</a>
+               <a href="#experience"><i class="fas fa-briefcase" style="margin-right: 10px;"></i> Experience</a>
+               <a href="/teaching.html"><i class="fas fa-chalkboard-teacher" style="margin-right: 10px;"></i> Teaching</a>
+               <a href="#publications_section"><i class="fas fa-book" style="margin-right: 10px;"></i> Publications</a>
+               <a href="#projects"><i class="fas fa-project-diagram" style="margin-right: 10px;"></i> Projects</a>
+               <a href="#certifications"><i class="fas fa-certificate" style="margin-right: 10px;"></i> Certifications</a>
+               <a href="#achievements"><i class="fas fa-trophy" style="margin-right: 10px;"></i> Achievements</a>
+               <!-- add for Events -->
+                <a href="events.html"><i class="fas fa-calendar-alt" style="margin-right: 10px;"></i> Events</a>
+             </div>
            <h2 class="text-left mb-4">About Me</h2>
            <div class="row">
              <div class="col-lg-8 content">
@@ -427,17 +442,7 @@
              </div>
            </div>
            
-           <div class="section-buttons mt-5">
-             <a href="#education"><i class="fas fa-graduation-cap" style="margin-right: 10px;"></i> Education</a>
-             <a href="#experience"><i class="fas fa-briefcase" style="margin-right: 10px;"></i> Experience</a>
-             <a href="/teaching.html"><i class="fas fa-chalkboard-teacher" style="margin-right: 10px;"></i> Teaching</a>
-             <a href="#publications_section"><i class="fas fa-book" style="margin-right: 10px;"></i> Publications</a>
-             <a href="#projects"><i class="fas fa-project-diagram" style="margin-right: 10px;"></i> Projects</a>
-             <a href="#certifications"><i class="fas fa-certificate" style="margin-right: 10px;"></i> Certifications</a>
-             <a href="#achievements"><i class="fas fa-trophy" style="margin-right: 10px;"></i> Achievements</a>
-             <!-- add for Events -->
-              <a href="events.html"><i class="fas fa-calendar-alt" style="margin-right: 10px;"></i> Events</a>
-           </div>
+           
          </div>
        </section>
 
@@ -1095,8 +1100,14 @@
        </div> -->
     </footer>
     <script src=/bootstrap-5/js/bootstrap.bundle.min.js></script>
-    <script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
-    
+    <script>
+if (localStorage.getItem("pref-theme") === "dark") {
+    document.body.classList.add('dark');
+} else {
+    document.body.classList.remove('dark');
+    localStorage.setItem("pref-theme", 'light');
+}
+</script>    
       <script src=/js/search.js></script>
     <!-- <script src=/js/search.js></script> -->
     <script>

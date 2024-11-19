@@ -70,15 +70,15 @@
 }
 
 .project-card .image-container {
-    width: 100%;
-    height: 0;
+    /* width: 100%; */
+    height: 100%;
     padding-bottom: 45%; 
     position: relative;
     overflow: hidden;
     border-radius: 5px;
 }
 
-.project-card:nth-child(1) .image-container {
+/* .project-card:nth-child(1) .image-container {
     padding-bottom: 65%;
 }
 
@@ -105,15 +105,15 @@
 
 .project-card:nth-child(7) .image-container {
     padding-bottom: 70%;
-}
+} */
 
 .project-card img {
     position: absolute;
-    top: 0;
-    left: 0;
+    /* top: 0; */
+    /* left: 0; */
     width: 100%;
-    height: 100%;
-    /* object-fit: cover;    */
+    height: 100%; 
+    object-fit: scale-down; 
 }
 .project-card h3 {
     margin-top: 1rem;
@@ -219,8 +219,15 @@
     </head>
 <body class="light">
     <!-- <script> -->
-        <script>let localStorageValue=localStorage.getItem("pref-theme"),mediaQuery=window.matchMedia('(prefers-color-scheme: dark)').matches;switch(localStorageValue){case"dark":document.body.classList.add('dark');break;case"light":document.body.classList.remove('dark');break;default:mediaQuery&&document.body.classList.add('dark');break}</script>
-        <script>var prevScrollPos=window.pageYOffset;window.addEventListener("scroll",function(){let c=document.getElementById("profileHeader"),a=window.pageYOffset,b=!1,d=!0,e=d?prevScrollPos>a:a>0;e?c.classList.add("showHeaderOnTop"):b=!0,a===0&&(b=!0),b&&c.classList.remove("showHeaderOnTop"),prevScrollPos=a})</script>
+    <script>
+let localStorageValue = localStorage.getItem("pref-theme");
+if (localStorageValue === "dark") {
+    document.body.classList.add('dark');
+} else {
+    document.body.classList.remove('dark');
+    localStorage.setItem("pref-theme", 'light');
+}
+</script>        <script>var prevScrollPos=window.pageYOffset;window.addEventListener("scroll",function(){let c=document.getElementById("profileHeader"),a=window.pageYOffset,b=!1,d=!0,e=d?prevScrollPos>a:a>0;e?c.classList.add("showHeaderOnTop"):b=!0,a===0&&(b=!0),b&&c.classList.remove("showHeaderOnTop"),prevScrollPos=a})</script>
     <header id=profileHeader>
         <nav class="pt-3 navbar navbar-expand-lg animate">
            <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
@@ -289,8 +296,8 @@
                        </a>
                     </li>
                     <li class="nav-item navbar-text">
-                       <a class=nav-link href=/gallery title="Blog posts">
-                       Gallery
+                       <a class=nav-link href=/teaching/useful_links.html title="Blog posts">
+                       links
                        </a>
                     </li> -->
                     <li class="nav-item navbar-text">
@@ -353,7 +360,7 @@
             </div>
             
             <div class="project-cards">
-                <!-- Example of a project card -->
+                <!-- FastVPINNs-->
                 <div class="project-card" data-tags="sml">
                     <div class="row">
                         <div class="col-md-5">
@@ -402,6 +409,23 @@
                     </div>
                 </div>
 
+                <!-- FastVPINNs SUPG -->
+                <div class="project-card" data-tags="fem">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="image-container">
+                                <img src="images/vpinns_supg_tau.png" alt="Project Title" class="">
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <h3>Improving hp-Variational Physics-Informed Neural Networks for Steady-State Convection-Dominated Problems</h3>
+                            <h4>New Methods to improve accuracy of variational PINNs in solving Singularly Perturbed Problems. </h4>
+                            <p>We present an ensemble forecast for Wave-3 of COVID-19 in the state of Karnataka, India, using the IISc Population Balance Model for infectious disease spread. The reported data of confirmed, recovered, and deceased cases in Karnataka from 1 July 2020 to 4 July 2021 is utilized to tune the model’s parameters, and an ensemble forecast is done from 5 July 2021 to 30 June 2022. The ensemble is built with 972 members by varying seven critical parameters that quantify the uncertainty in the spread dynamics (antibody waning, viral mutation) and interventions (pharmaceutical, non-pharmaceutical). The probability of Wave-3, the peak date distribution, and the peak caseload distribution are estimated from the ensemble forecast.</p>
+                            <a href="projects/fastvpinns_supg.html" class="btn btn-primary read-more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Digital Shadowing -->
                 <div class="project-card" data-tags="sml">
                     <div class="row">
@@ -437,6 +461,8 @@
                     </div>
                 </div>
 
+                
+
                 <!-- Free Surface ALE -->
                 <div class="project-card" data-tags="fem">
                     <div class="row">
@@ -471,6 +497,25 @@
                     </div>
                 </div>
 
+                <!-- DO Equations-->
+                <div class="project-card" data-tags="fem">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="image-container">
+                                <img src="images/do_1.png" alt="Project Title" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <h3>A finite element implementation of the dynamically orthogonal field equations scheme for uncertainty quantification</h3>
+                            <h4>Dynamic Orthogonal formulation for Uncertanity Quantification using FEM</h4>
+                            <p>In this work, we employ an efficient and provably accurate Dynamically Orthogonal (DO) field equation method for reducing the stochastic order by ensuring that the mean squared error of the variance of the stochastic field is minimised. By hypothesizing a decomposition of the solution field into a mean and stochastic dynamical component, we derive a system of field equations consisting of a Partial Differential Equation (PDE) for the mean field, a family of PDEs for the orthonormal basis that describe the stochastic subspace where the stochasticity ‘lives’ as well as a system of Stochastic Differential Equations that defines how the stochasticity evolves in the time varying stochastic subspace. These new evolution equations are derived directly from the original SPDE, using nothing more than a dynamically orthogonal condition on the representation of the solution. We apply this method to both linear and non-linear dynamical systems and compare our results with Monte Carlo simulations.</p>
+                            <!-- <a href="https://colab.research.google.com/github/divijghose/COVID_Wave3_IISc/blob/main/COVID_Wave3_Ensemble.ipynb" class="btn btn-primary read-more">Read More</a> -->
+                        </div>
+                    </div>
+                </div>
+
+                
+
             </div>
             
             <div class="text-center mt-5">
@@ -483,8 +528,14 @@
         <!-- Your footer content -->
     </footer>
     <script src=/bootstrap-5/js/bootstrap.bundle.min.js></script>
-    <script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
-    
+    <script>
+if (localStorage.getItem("pref-theme") === "dark") {
+    document.body.classList.add('dark');
+} else {
+    document.body.classList.remove('dark');
+    localStorage.setItem("pref-theme", 'light');
+}
+</script>    
       <script src=/js/search.js></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
