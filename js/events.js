@@ -167,8 +167,25 @@ document.addEventListener('DOMContentLoaded', function() {
             description: "Our work on variational PINNs for wind fard modelling was presented at a poster at Shell.ai conference held at Bangalore. This work was our collaboration with Shell India Research Labs",
             tags:        ["Presentations"],
             link:        "https://www.linkedin.com/posts/thivinanandh_sciml-fluiddynamics-machinelearning-activity-7239668088978186240-Us-I?utm_source=share&utm_medium=member_desktop"
-        }
+        },
         // Add more events as needed
+        // IGHASC-2024
+        {
+            title:       "Best Poster Award: Indo-German Conference on Hardware Aware Scientific Computing",
+            date:        "2024-10-28",
+            description: "Our work on the `Improving hp-Variational Physics-Informed Neural Networks for Steady-State Convection-Dominated Problems` was presented at IGHASC-2024, Heidelberg Germany. I was awarded the Best Poster Award for the presentation",
+            tags:        ["Awards", "Presentations"],
+            link:        "projects/fastvpinns_supg.html"
+        },
+
+        // SUPG Paper Submission
+        {
+            title:       "arXiv: SUPG Stabilized hp-VPINNs",
+            date:        "2024-11-03",
+            description: "Our work on the `Improving hp-Variational Physics-Informed Neural Networks for Steady-State Convection-Dominated Problems` was submitted to arXiv",
+            tags:         ["Publications"],
+            link:        "projects/fastvpinns_supg.html"
+        }
     ];
 
     let activeFilters = [];
