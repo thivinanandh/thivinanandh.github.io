@@ -1074,7 +1074,7 @@ header .navbar.animate {
 }
 
 #achievements .card h5 {
-    color: var(--text-color) !important;
+    color: var(--primary-color) !important;
     opacity: 0.9;
     font-family: 'Alata', sans-serif;
 }
@@ -1082,6 +1082,8 @@ header .navbar.animate {
 #achievements .card:hover {
     border: 2px solid var(--text-color);
     transition: .3s;
+    border-color: var(--primary-color) !important;
+
 }
 #achievements .card:focus {
     border: 2px solid var(--text-color);
@@ -1092,6 +1094,16 @@ header .navbar.animate {
     background-color: var(--secondary-color) !important;
     color: var(--text-secondary-color) !important;
     font-family: 'Alata', sans-serif;
+}
+
+#achievements .fa-award, .fa-trophy, .fa-medal {
+    transition: transform 0.3s ease;
+}
+
+#achievements .card:hover .fa-award,
+#achievements .card:hover .fa-trophy,
+#achievements .card:hover .fa-medal {
+    transform: scale(1.2);
 }
 
 #achievements img {
