@@ -180,11 +180,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // SUPG Paper Submission
         {
-            title:       "arXiv: SUPG Stabilized hp-VPINNs",
-            date:        "2024-11-03",
-            description: "Our work on the `Improving hp-Variational Physics-Informed Neural Networks for Steady-State Convection-Dominated Problems` was submitted to arXiv",
+            title:       "Journal Publication: SUPG Stabilized hp-VPINNs",
+            date:        "2024-12-06",
+            description: "Our work on the 'Improving hp-Variational Physics-Informed Neural Networks for Steady-State Convection-Dominated Problems' was accepted for publication at 'Computer Methods in Applied Mechanics and Engineering [CMAME]'",
             tags:         ["Publications"],
             link:        "projects/fastvpinns_supg.html"
+        },
+
+        // SUPG Paper Submission
+        {
+            title:       "Journal Publication: FastVPINNs",
+            date:        "2024-12-10",
+            description: "Our work on the `FastVPINNs` was accepted for publication at `SIAM Journal of Scientific Computing [SIAM-SISC]`",
+            tags:         ["Publications"],
+            link:        "projects/fastvpinns.html"
         }
     ];
 
