@@ -187,16 +187,16 @@ if (localStorageValue === "dark") {
                       PhD Student
                    </h3>
                    <h4>
-                    SciML | MLOps | CFD | FEM | HPC
+                    SciML | MLOPs | CFD | FEM | HPC
                    </h4>
                    <p class=hero-content>
-                     A passionate researcher working on Scientific Machine Learning and High Performance Computing for fluid flow problems. I'm excited to develop and deploy efficient and scalable algorithms for fluid dynamics problems using modern ML and HPC techniques.
-                   </p>
+                     A researcher exploring the intersection of Scientific Machine Learning, Computational Science, and High Performance Computing to solve complex problems in physics. I'm passionate about developing solutions that bridge traditional scientific computing with modern machine learning, focused on creating practical implementations that can tackle real-world challenges.
+                  </p>
                    <div class=row>
-                      <div class="col-auto h-100">
-                         <a href=# class=btn download>
-                         Resume
-                         </a>
+                      <div class="col-auto h-100" >
+                        <a href="src/Thivin_Anandh_CV.pdf" class="btn" target="_blank" rel="noopener noreferrer">
+                           Download CV
+                       </a>
                       </div>
                     <!-- ... existing code ... -->
 <div class="col-auto px-0 h-100">
@@ -404,7 +404,7 @@ if (localStorageValue === "dark") {
            <h2 class="text-left mb-4">About Me</h2>
            <div class="row">
              <div class="col-lg-8 content">
-               <p>Currently a PhD student at the <a href="https://airexlab.cds.iisc.ac.in/">AIREX Lab</a> at the <a href="https://cds.iisc.ac.in/">Department of Computational and Data Sciences</a> at <a href="https://iisc.ac.in">Indian Institute of Science</a>. My research interests include:</p>
+               <p  style="font-family: 'Alata', sans-serif; opacity: 0.85;">PhD in Computational and Data Sciences at <a href="https://iisc.ac.in">Indian Institute of Science</a>. My research interests include:</p>
                <div class="tech-cards">
                   <div class="tech-card">Scientific Machine Learning</div>
                   <div class="tech-card">Physics Informed Neural Networks</div>
@@ -414,26 +414,97 @@ if (localStorageValue === "dark") {
                 
                  <div class="tech-card">Computational Fluid Dynamics</div>
                </div>
-               <p class="mt-4">I have three years of industry experience working as a software engineer at Accenture. I have also worked on the development of <a href="#">ParMooN</a>, our in-house FEM package written in C++, and I'm the lead developer of <a href="https://cmgcds.github.io/fastvpinns">FastVPINNs</a>, an efficient implementation of hp-VPINNs written in python. I am a Google Certified Tensorflow Developer.
-                  I am also working with Shell India Markets Private Limited and ITC for my research.</p>
-               </p>
+               <p class="mt-4" style="font-family: 'Alata', sans-serif; opacity: 0.85;">I am a Google Certified TensorFlow Developer. During my PhD, I developed CUDA routines in our in-house FEM package <a href="#">ParMooN</a> and led the development of <a href="https://cmgcds.github.io/fastvpinns">FastVPINNs</a>, an efficient hp-VPINNs implementation in Python. I collaborated with Shell Research India and ITC Research.</p>
                
                <h4 class="mt-4">Skill Sets</h4>
-               <div class="skill-sets">
-                 <span class="skill-tag">C++</span>
-                 <span class="skill-tag">C</span>
-                 <span class="skill-tag">Python</span>
-                 <span class="skill-tag">Matlab</span>
-                 <span class="skill-tag">Tensorflow</span>
-                 <span class="skill-tag">Docker</span>
-                 <span class="skill-tag">Github Actions</span>
-                 <span class="skill-tag">deal-ii</span>
-                 <span class="skill-tag">Gmsh</span>
-                 <span class="skill-tag">Pointwise</span>
-                 <span class="skill-tag">CUDA</span>
-                 <span class="skill-tag">MPI</span>
-                 <span class="skill-tag">OpenMP</span>
-               </div>
+               
+               <!-- SKILLS -->
+               <div class="skills-container">
+                  <div class="skills-grid">
+                      <div class="skill-category">
+                          <div class="skill-header">
+                              <i class="fas fa-code"></i>
+                              Programming Languages
+                          </div>
+                          <div class="skill-tags">
+                              <span class="skill-tag">C++</span>
+                              <span class="skill-tag">C</span>
+                              <span class="skill-tag">Python</span>
+                              <span class="skill-tag">Matlab</span>
+                          </div>
+                      </div>
+              
+                      <div class="skill-category">
+                          <div class="skill-header">
+                              <i class="fas fa-microchip"></i>
+                              High Performance Computing
+                          </div>
+                          <div class="skill-tags">
+                              <span class="skill-tag">MPI</span>
+                              <span class="skill-tag">OpenMP</span>
+                              <span class="skill-tag">CUDA</span>
+                              <span class="skill-tag">pympi</span>
+                              <span class="skill-tag">OpenACC</span>
+                          </div>
+                      </div>
+              
+                      <div class="skill-category">
+                          <div class="skill-header">
+                              <i class="fas fa-brain"></i>
+                              Machine Learning
+                          </div>
+                          <div class="skill-tags">
+                              <span class="skill-tag">TensorFlow</span>
+                              <span class="skill-tag">scikit-learn</span>
+                              <span class="skill-tag">DeepXDE</span>
+                              <span class="skill-tag">JAX</span>
+                          </div>
+                      </div>
+              
+                      <div class="skill-category">
+                          <div class="skill-header">
+                              <i class="fas fa-calculator"></i>
+                              Scientific Computing
+                          </div>
+                          <div class="skill-tags">
+                              <span class="skill-tag">deal.II</span>
+                              <span class="skill-tag">Gmsh</span>
+                              <span class="skill-tag">CMake</span>
+                              <span class="skill-tag">Paraview</span>
+                              <span class="skill-tag">Pointwise</span>
+                          </div>
+                      </div>
+              
+                      <div class="skill-category">
+                          <div class="skill-header">
+                              <i class="fas fa-cogs"></i>
+                              MLOps
+                          </div>
+                          <div class="skill-tags">
+                              <span class="skill-tag">Git</span>
+                              <span class="skill-tag">DVC</span>
+                              <span class="skill-tag">Docker</span>
+                              <span class="skill-tag">GitHub Actions</span>
+                              <span class="skill-tag">Jenkins</span>
+                          </div>
+                      </div>
+              
+                      <div class="skill-category">
+                          <div class="skill-header">
+                              <i class="fas fa-window-maximize"></i>
+                              Web Technologies
+                          </div>
+                          <div class="skill-tags">
+                              <span class="skill-tag">HTML</span>
+                              <span class="skill-tag">CSS</span>
+                              <span class="skill-tag">JavaScript</span>
+                              <span class="skill-tag">p5.js</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+
              </div>
              <div class="col-lg-4">
                <div class="recent-highlights">
