@@ -98,6 +98,45 @@
     text-decoration: none;
     border-left: 3px solid transparent;
     transition: all 0.3s ease;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.nav-link-sidebar {
+    display: block;
+    padding: 10px;
+    color: var(--text-color);
+    text-decoration: none;
+    border-left: 3px solid transparent;
+    /* border: 1px solid var(--text-secondary-color); */
+    transition: all 0.3s ease;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Alata', sans-serif;
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+/* .nav-link-sidebar.active {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    font-weight: 500;
+} */
+
+/* Add spacing between categories */
+.category-group {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--text-secondary-color);
+}
+
+.nav-link-sidebar:hover, .nav-link-sidebar:focus {
+    background-color: var(--primary-color);
+    color: var(--background-color);
 }
 
 .nav-link:hover, .nav-link:focus {
@@ -166,7 +205,6 @@
     color: var(--primary-color);
     margin-bottom: 10px;
     font-family: 'Poppins', sans-serif;
-    a
 }
 
 .project-card p {
@@ -213,6 +251,7 @@
     margin-top: 0.2rem !important;
     margin-bottom: 0.2rem !important;
 }
+
 
 @media (max-width: 1024px) {
     .content-wrapper {
@@ -344,21 +383,29 @@ if (localStorageValue === "dark") {
            </div>
         </nav>
      </header>
+    
 
     <div class="container-fluid">
         <div class="content-wrapper">
             <nav class="sidebar">
-                <a href="#hpc-computation" class="nav-link">HPC & Computation</a>
-                <a href="#FEM" class="nav-link">FEM</a>
-                <a href="#CFD" class="nav-link">CFD</a>
-                <a href="#machine-learning-mlops" class="nav-link">Machine Learning and MLOps</a>
-                <a href="#ga-nd-ne" class="nav-link">Genetic Algorithm and NeuroEvolution</a>
-                <a href="#open-source-tools" class="nav-link">Open Source Tools</a>
-                <a href="#teaching-repositories" class="nav-link">Teaching Repositories</a>
-                <a href="#game-dev" class="nav-link">Game Development</a>
+                <h3 style="
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid var(--primary-color);
+        color: var(--text-color);
+        font-size: 1.1rem;
+    ">Project Categories</h3>
+                <a href="#hpc-computation" class="nav-link-sidebar">HPC & Computation</a>
+                <a href="#FEM" class="nav-link-sidebar">FEM</a>
+                <a href="#CFD" class="nav-link-sidebar">CFD</a>
+                <a href="#machine-learning-mlops" class="nav-link-sidebar">Machine Learning and MLOps</a>
+                <a href="#ga-nd-ne" class="nav-link-sidebar">Genetic Algorithm and NeuroEvolution</a>
+                <a href="#open-source-tools" class="nav-link-sidebar">Open Source Tools</a>
+                <a href="#teaching-repositories" class="nav-link-sidebar">Teaching Repositories</a>
+                <a href="#game-dev" class="nav-link-sidebar">Game Development</a>
                 
 
-                <a href="#others" class="nav-link">Others</a>
+                <a href="#others" class="nav-link-sidebar">Others</a>
                 
             </nav>
             
@@ -731,6 +778,8 @@ if (localStorageValue === "dark") {
     </div>
 
     <script>
+
+        
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
